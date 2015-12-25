@@ -127,6 +127,8 @@ module.exports = function (grunt) {
                 ]
             }
         },
+
+        // Cleanup
         clean: ['build']
     });
 
@@ -135,7 +137,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-hashres');
-    grunt.loadNpmTasks('grunt-s3');
+    grunt.loadNpmTasks('grunt-aws-s3');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // On run
