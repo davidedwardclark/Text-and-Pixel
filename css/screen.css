@@ -11,17 +11,17 @@ body {
 }
 
 @font-face {
-	font-family: "FF DIN Bold";
-	src: url("/fonts/1448028/0cfa7c07-29e3-473f-a0e0-9f2b6a1c2880.eot?#iefix");
-	src: url("/fonts/1448028/0cfa7c07-29e3-473f-a0e0-9f2b6a1c2880.eot?#iefix") format("eot"), url("/fonts/1448028/bb06c1e8-d3a7-48b2-8421-210adb53936c.woff2") format("woff2"), url("/fonts/1448028/4c553e2f-60f0-4b5a-bb6f-ea7c8b4469d3.woff") format("woff"), url("/fonts/1448028/12245acd-f8a6-4165-985a-c90be2f6a58f.ttf") format("truetype");
-}
-
-@font-face {
 	font-family: "FF DIN Regular";
 	src: url("/fonts/1448174/6227d440-c57f-4723-acee-07246bc1e4a4.eot?#iefix");
 	src: url("/fonts/1448174/6227d440-c57f-4723-acee-07246bc1e4a4.eot?#iefix") format("eot"), url("/fonts/1448174/f82a2aed-64a0-4b6d-b309-31e4439eefee.woff2") format("woff2"), url("/fonts/1448174/a0cfaae4-efbb-4ca1-8044-927f639d290a.woff") format("woff"), url("/fonts/1448174/7f3238f2-67ed-4935-b705-9dddd527c215.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "FF DIN Bold";
+	src: url("/fonts/1448028/0cfa7c07-29e3-473f-a0e0-9f2b6a1c2880.eot?#iefix");
+	src: url("/fonts/1448028/0cfa7c07-29e3-473f-a0e0-9f2b6a1c2880.eot?#iefix") format("eot"), url("/fonts/1448028/bb06c1e8-d3a7-48b2-8421-210adb53936c.woff2") format("woff2"), url("/fonts/1448028/4c553e2f-60f0-4b5a-bb6f-ea7c8b4469d3.woff") format("woff"), url("/fonts/1448028/12245acd-f8a6-4165-985a-c90be2f6a58f.ttf") format("truetype");
+}
+
 h1 {
-	font-family: "FF DIN Regular", helvetica, sans-serif;
+	font-family: "FF DIN Bold", "FF DIN Regular", helvetica, sans-serif;
 }
