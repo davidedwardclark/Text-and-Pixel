@@ -35,6 +35,10 @@ strong {
 	font-family: "FF DIN Bold", helvetica, sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 
 
 /* Header */
@@ -76,15 +80,25 @@ header nav li a {
 	text-decoration: none;
 }
 
-/* Block Title */
 
-.block-title {
-	padding: 300px 0;
+
+/* Block */
+
+.highlight {
 	background-color: #0066ff;
 }
-.block-title-text {
+
+.block {
+	padding: 300px 0;
+}
+
+.block-inner {
 	width: 1500px;
 	margin: 0 auto;
+	color: #cccccc;
+}
+
+.highlight .block-inner {
 	color: #ffffff;
 	font-size: 90px;
 	line-height: 90px;
