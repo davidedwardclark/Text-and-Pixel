@@ -25,18 +25,53 @@ html {
 	box-sizing: inherit;
 }
 
-
 body {
 	font-family: "FF DIN Regular", helvetica, sans-serif;
 }
 
-strong {
-	font-weight: normal;
-	font-family: "FF DIN Bold", helvetica, sans-serif;
-}
-
 img {
 	max-width: 100%;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+/* Typography */
+
+h2 {
+	font-size: 90px;
+	line-height: 90px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+p {
+	font-size: 50px;
+	line-height: 80px;
+	color: #cccccc;
+}
+
+li {
+	list-style: none;
+}
+
+strong {
+	font-family: "FF DIN Bold";
+	color: #0066ff;
+}
+
+
+
+/* Containers */
+
+header, .footer-inner, .block-inner {
+	width: 1500px;
+	margin: 0 auto;
 }
 
 
@@ -44,9 +79,7 @@ img {
 /* Header */
 
 header {
-	width: 1500px;
 	height: 450px;
-	margin: 0 auto;
 	padding-top: 75px;
 }
 
@@ -55,11 +88,10 @@ header nav {
 	padding-top: 16px;
 }
 
-header nav  li {
+header nav li {
 	float: left;
-	list-style: none;
 	display: inline-block;
-	font-family: "FF DIN Bold", helvetica, sans-serif;
+	font-family: "FF DIN Bold";
 	font-size: 20px;
 	line-height: 40px;
 	margin-left: 100px;
@@ -82,24 +114,69 @@ header nav li a {
 
 
 
-/* Block */
+/* Footer */
 
-.highlight {
+footer {
 	background-color: #0066ff;
 }
 
-.block {
+.footer-inner {
 	padding: 300px 0;
 }
 
-.block-inner {
-	width: 1500px;
+.footer-inner-container {
+	width: 600px;
 	margin: 0 auto;
-	color: #cccccc;
 }
 
-.highlight .block-inner {
+.logo-container, .text-container {
+	width: 300px;
+	float: left;
+}
+
+.logo-container {
+	padding-right: 37.5px;
+}
+
+.logo-container img {
+	float: right;
+}
+
+.text-container {
+	padding-left: 37.5px;
+}
+
+.text-container ul {
+	margin-bottom: 300px;
+}
+
+.text-container ul li {
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 30px;
 	color: #ffffff;
-	font-size: 90px;
-	line-height: 90px;
+}
+
+.text-container ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.text-container p {
+	font-size: 30px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+
+
+/* Block */
+
+.block {
+	padding: 300px 0;
+	background-color: #ffffff;
+}
+
+.highlight {
+	background-color: #0066ff;
 }
