@@ -60,6 +60,11 @@ li {
 	list-style: none;
 }
 
+a:link, a:visited, a:hover, a:active {
+	color: #0066ff;
+	text-decoration: none;
+}
+
 strong {
 	font-family: "FF DIN Bold";
 	color: #0066ff;
@@ -94,13 +99,12 @@ header nav li {
 	font-family: "FF DIN Bold";
 	font-size: 20px;
 	line-height: 40px;
-	margin-left: 100px;
-
+	margin-left: 75px;
 	width: 100px;
 	height: 43px;
 	border-radius: 5px;
 	text-align: center;
-	background-color: #f3f3f3;
+	background-color: #ffffff;
 }
 
 header nav li.selected {
@@ -108,7 +112,7 @@ header nav li.selected {
 	background-color: #ff0099;
 }
 
-header nav li a {
+header nav li a:link, header nav li a:visited, header nav li a:hover, header nav li a:active {
 	display: block;
 	width: 100px;
 	height: 43px;
@@ -183,4 +187,49 @@ footer {
 
 .highlight {
 	background-color: #0066ff;
+}
+
+
+
+/* Work */
+
+.img-left, .text-right {
+	width: 50%;
+}
+
+.img-left {
+	float: left;
+}
+
+.text-right {
+	float: right;
+	padding-left: 61.5px;
+}
+
+.cisco-1 {
+	margin-top: 28px;
+}
+
+.epicure-1 {
+	margin-top: 132px;
+}
+
+.epicure-2 {
+	margin-top: 107px;
+}
+
+.img-container {
+	margin-bottom: 115px;
+}
+
+.img-container img {
+	margin-right: 164px;
+}
+
+.img-container img:last-child {
+	margin-right: 0;
+}
+
+.center {
+	text-align: center;
 }
