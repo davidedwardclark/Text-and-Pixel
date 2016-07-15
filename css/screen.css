@@ -315,13 +315,13 @@ footer {
 		float: none;
 		margin: 0 auto;
 		display: block;
-		margin-bottom: 150px;
+		margin-bottom: 75px;
 	}
 	.text-container {
 		padding-left: 0;
 	}
 	.text-container ul {
-		margin-bottom: 150px;
+		margin-bottom: 75px;
 	}
 	.text-container ul li {
 		font-size: 30px;
