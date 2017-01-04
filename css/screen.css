@@ -127,8 +127,8 @@ header, .block, footer {
 	background-color: #0066ff;
 }
 
-.block.highlight h2 {
-	margin-top: -20px;
+.highlight h2 {
+	margin-top: -10px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -137,8 +137,8 @@ header, .block, footer {
 		padding-right: 5%;
 	}
 	.block {
-		padding-top: 90px;
-		padding-bottom: 90px;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 }
 
@@ -148,8 +148,8 @@ header, .block, footer {
 		padding-right: 4%;
 	}
 	.block {
-		padding-top: 75px;
-		padding-bottom: 75px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }
 
@@ -159,8 +159,8 @@ header, .block, footer {
 		padding-right: 3%;
 	}
 	.block {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -170,16 +170,19 @@ header, .block, footer {
 		padding-right: 2%;
 	}
 	.block {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
 
 @media screen and (max-width: 500px) {
 	.block {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.highlight h2 {
+		margin-top: -5px;
 	}
 }
 
