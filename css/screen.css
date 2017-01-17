@@ -336,7 +336,8 @@ footer img {
 
 .work .block .suggestion-box,
 .work .block .mockup-review,
-.work .block .everyday-epicure {
+.work .block .everyday-epicure,
+.work .block .the-hub {
 	width: 50%;
 }
 
@@ -347,7 +348,8 @@ footer img {
 @media screen and (max-width: 1000px) {
 	.work .block .suggestion-box,
 	.work .block .mockup-review,
-	.work .block .everyday-epicure {
+	.work .block .everyday-epicure,
+	.work .block .the-hub {
 		width: 60%;
 	}
 }
@@ -355,7 +357,8 @@ footer img {
 @media screen and (max-width: 750px) {
 	.work .block .suggestion-box,
 	.work .block .mockup-review,
-	.work .block .everyday-epicure {
+	.work .block .everyday-epicure,
+	.work .block .the-hub {
 		width: 70%;
 	}
 }
@@ -363,7 +366,8 @@ footer img {
 @media screen and (max-width: 500px) {
 	.work .block .suggestion-box,
 	.work .block .mockup-review,
-	.work .block .everyday-epicure {
+	.work .block .everyday-epicure,
+	.work .block .the-hub {
 		width: 80%;
 	}
 }
