@@ -44,6 +44,10 @@ img {
 
 /* Typography */
 
+h1, h2, p {
+	margin-top: -10px;
+}
+
 h1, h2 {
 	font-size: 40px;
 	line-height: 1.5;
@@ -66,14 +70,10 @@ p {
 	font-size: 40px;
 	line-height: 1.5;
 	color: #bbbbbb;
-	margin-top: -10px;
 }
 
 footer p {
 	margin-top: 0;
-}
-
-.highlight p, footer p {
 	color: #ffffff;
 }
 
@@ -105,18 +105,21 @@ strong {
 @media screen and (max-width: 1000px) {
 	h1, h2, p {
 		font-size: 25px;
+		margin-top: -5px;
 	}
 }
 
 @media screen and (max-width: 750px) {
 	h1, h2, p {
 		font-size: 20px;
+		margin-top: -4px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	h1, h2, p {
 		font-size: 15px;
+		margin-top: -2px;
 	}
 }
 
@@ -130,28 +133,21 @@ strong {
 }
 
 header, .block, footer {
-	padding: 0 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .block {
 	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-.highlight {
-	margin-bottom: 100px;
 }
 
 .highlight, footer {
 	background-color: #0066ff;
-}
-
-.highlight h2 {
-	margin-top: -10px;
+	padding-bottom: 100px;
 }
 
 .block.half-top-padding {
-	padding-top: 0;
+	padding-top: 50px;
 }
 
 footer {
@@ -165,10 +161,12 @@ footer {
 	}
 	.block {
 		padding-top: 70px;
-		padding-bottom: 70px;
 	}
-	.highlight {
-		margin-bottom: 70px;
+	.block.half-top-padding {
+		padding-top: 35px;
+	}
+	.highlight, footer {
+		padding-bottom: 70px;
 	}
 	footer {
 		margin-top: 70px;
@@ -182,10 +180,12 @@ footer {
 	}
 	.block {
 		padding-top: 60px;
-		padding-bottom: 60px;
 	}
-	.highlight {
-		margin-bottom: 60px;
+	.block.half-top-padding {
+		padding-top: 30px;
+	}
+	.highlight, footer {
+		padding-bottom: 60px;
 	}
 	footer {
 		margin-top: 60px;
@@ -199,10 +199,12 @@ footer {
 	}
 	.block {
 		padding-top: 50px;
-		padding-bottom: 50px;
 	}
-	.highlight {
-		margin-bottom: 50px;
+	.block.half-top-padding {
+		padding-top: 25px;
+	}
+	.highlight, footer {
+		padding-bottom: 50px;
 	}
 	footer {
 		margin-top: 50px;
@@ -216,27 +218,30 @@ footer {
 	}
 	.block {
 		padding-top: 40px;
-		padding-bottom: 40px;
 	}
-	.highlight {
-		margin-bottom: 40px;
+	.block.half-top-padding {
+		padding-top: 20px;
+	}
+	.highlight, footer {
+		padding-bottom: 40px;
 	}
 	footer {
 		margin-top: 40px;
 	}
 }
 
-
 @media screen and (max-width: 500px) {
-	.block {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 	.highlight h2 {
 		margin-top: -5px;
 	}
-	.highlight {
-		margin-bottom: 30px;
+	.block {
+		padding-top: 30px;
+	}
+	.block.half-top-padding {
+		padding-top: 15px;
+	}
+	.highlight, footer {
+		padding-bottom: 30px;
 	}
 	footer {
 		margin-top: 30px;
