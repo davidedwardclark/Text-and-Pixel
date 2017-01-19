@@ -51,22 +51,29 @@ h1, h2 {
 	color: #ffffff;
 }
 
-h2 {
-	text-align: center;
-	color: #bbbbbb;
-}
-
 h1.introduction {
 	font-weight: normal;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #bbbbbb;
+	border-bottom: 1px solid #eeeeee;
 }
 
 p {
 	font-size: 40px;
 	line-height: 1.5;
 	color: #bbbbbb;
+	margin-top: -10px;
 }
 
-.highlight p {
+footer p {
+	margin-top: 0;
+}
+
+.highlight p, footer p {
 	color: #ffffff;
 }
 
@@ -129,10 +136,13 @@ header, .block, footer {
 .block {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #ffffff;
 }
 
 .highlight {
+	margin-bottom: 100px;
+}
+
+.highlight, footer {
 	background-color: #0066ff;
 }
 
@@ -140,8 +150,12 @@ header, .block, footer {
 	margin-top: -10px;
 }
 
-.block.no-bottom-padding {
-	padding-bottom: 0;
+.block.half-top-padding {
+	padding-top: 0;
+}
+
+footer {
+	margin-top: 100px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -152,6 +166,12 @@ header, .block, footer {
 	.block {
 		padding-top: 70px;
 		padding-bottom: 70px;
+	}
+	.highlight {
+		margin-bottom: 70px;
+	}
+	footer {
+		margin-top: 70px;
 	}
 }
 
@@ -164,6 +184,12 @@ header, .block, footer {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
+	.highlight {
+		margin-bottom: 60px;
+	}
+	footer {
+		margin-top: 60px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -174,6 +200,12 @@ header, .block, footer {
 	.block {
 		padding-top: 50px;
 		padding-bottom: 50px;
+	}
+	.highlight {
+		margin-bottom: 50px;
+	}
+	footer {
+		margin-top: 50px;
 	}
 }
 
@@ -186,6 +218,12 @@ header, .block, footer {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	.highlight {
+		margin-bottom: 40px;
+	}
+	footer {
+		margin-top: 40px;
+	}
 }
 
 
@@ -196,6 +234,12 @@ header, .block, footer {
 	}
 	.highlight h2 {
 		margin-top: -5px;
+	}
+	.highlight {
+		margin-bottom: 30px;
+	}
+	footer {
+		margin-top: 30px;
 	}
 }
 
