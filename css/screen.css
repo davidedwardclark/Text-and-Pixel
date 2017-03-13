@@ -72,8 +72,7 @@ p {
 	color: #bbbbbb;
 }
 
-footer p {
-	margin-top: 0;
+.highlight p {
 	color: #ffffff;
 }
 
@@ -127,106 +126,110 @@ strong {
 
 /* Containers */
 
-.header-inner, .footer-inner, .block-inner {
+.header-inner, .block-inner {
 	max-width: 1500px;
 	margin: 0 auto;
 }
 
-header, .block, footer {
+header, .block {
 	padding-left: 10%;
 	padding-right: 10%;
 }
 
 .block {
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-.highlight, footer {
+.highlight {
 	background-color: #0066ff;
-	padding-bottom: 100px;
 }
 
 .block.half-top-padding {
 	padding-top: 50px;
 }
 
-footer {
-	margin-top: 100px;
+.no-bottom-padding {
+	padding-bottom: 0;
 }
 
 @media screen and (max-width: 1500px) {
-	header, .block, footer {
+	header, .block {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
 	.block {
 		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 	.block.half-top-padding {
 		padding-top: 35px;
 	}
-	.highlight, footer {
+	.highlight {
 		padding-bottom: 70px;
 	}
-	footer {
-		margin-top: 70px;
+	.no-bottom-padding {
+		padding-bottom: 0;
 	}
 }
 
 @media screen and (max-width: 1250px) {
-	header, .block, footer {
+	header, .block {
 		padding-left: 4%;
 		padding-right: 4%;
 	}
 	.block {
 		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.block.half-top-padding {
 		padding-top: 30px;
 	}
-	.highlight, footer {
+	.highlight {
 		padding-bottom: 60px;
 	}
-	footer {
-		margin-top: 60px;
+	.no-bottom-padding {
+		padding-bottom: 0;
 	}
 }
 
 @media screen and (max-width: 1000px) {
-	header, .block, footer {
+	header, .block {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
 	.block {
 		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.block.half-top-padding {
 		padding-top: 25px;
 	}
-	.highlight, footer {
+	.highlight {
 		padding-bottom: 50px;
 	}
-	footer {
-		margin-top: 50px;
+	.no-bottom-padding {
+		padding-bottom: 0;
 	}
 }
 
 @media screen and (max-width: 750px) {
-	header, .block, footer {
+	header, .block {
 		padding-left: 2%;
 		padding-right: 2%;
 	}
 	.block {
 		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.block.half-top-padding {
 		padding-top: 20px;
 	}
-	.highlight, footer {
+	.highlight {
 		padding-bottom: 40px;
 	}
-	footer {
-		margin-top: 40px;
+	.no-bottom-padding {
+		padding-bottom: 0;
 	}
 }
 
@@ -236,15 +239,16 @@ footer {
 	}
 	.block {
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.block.half-top-padding {
 		padding-top: 15px;
 	}
-	.highlight, footer {
+	.highlight {
 		padding-bottom: 30px;
 	}
-	footer {
-		margin-top: 30px;
+	.no-bottom-padding {
+		padding-bottom: 0;
 	}
 }
 
@@ -261,64 +265,12 @@ header img {
 	vertical-align: top;
 }
 
-header nav {
-	float: right;
-	padding-top: 5px;
-}
-
-header nav li {
-	float: left;
-	display: inline-block;
-	font-family: "FF DIN Bold";
-	font-size: 20px;
-	line-height: 40px;
-	margin-left: 50px;
-	width: 100px;
-	height: 43px;
-	border-radius: 5px;
-	text-align: center;
-	background-color: #ffffff;
-}
-
-header nav li.selected {
-	color: #ffffff;
-	background-color: #ff0099;
-}
-
-header nav li a:link, header nav li a:visited, header nav li a:hover, header nav li a:active {
-	display: block;
-	color: #ff0099;
-	text-decoration: none;
-}
-
-@media screen and (max-width: 1250px) {
-	header nav li {
-		margin-left: 40px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	header nav li {
-		margin-left: 30px;
-	}
-}
-
 @media screen and (max-width: 750px) {
 	header .header-inner {
 		padding: 25px 0;
 	}
 	header img {
 		width: 75px;
-	}
-	header nav {
-		padding-top: 4px;
-	}
-	header nav li {
-		font-size: 16px;
-		line-height: 30px;
-		margin-left: 15px;
-		width: 75px;
-		height: 32px;
 	}
 }
 
@@ -328,49 +280,6 @@ header nav li a:link, header nav li a:visited, header nav li a:hover, header nav
 	}
 	header img {
 		width: 65px;
-	}
-	header nav {
-		padding-top: 5px;
-	}
-	header nav li {
-		font-size: 14px;
-		line-height: 20px;
-		margin-left: 7px;
-		width: 56px;
-		height: 24px;
-	}
-}
-
-
-
-/* Footer */
-
-footer img {
-	display: inline;
-	width: 63px;
-}
-
-@media screen and (max-width: 1250px) {
-	footer img {
-		width: 48px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	footer img {
-		width: 40px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	footer img {
-		width: 33px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	footer img {
-		width: 24px;
 	}
 }
 
