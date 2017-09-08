@@ -1,331 +1,95 @@
 /* Global */
-
 @font-face {
-	font-family: "FF DIN Regular";
-	src: url("/fonts/ff-din-regular.eot?#iefix");
-	src: url("/fonts/ff-din-regular.eot?#iefix") format("eot"), url("/fonts/ff-din-regular.woff2") format("woff2"), url("/fonts/ff-din-regular.woff") format("woff"), url("/fonts/ff-din-regular.ttf") format("truetype");
+  font-family: "FF DIN Regular";
+  src: url("/fonts/ff-din-regular.eot?#iefix");
+  src: url("/fonts/ff-din-regular.eot?#iefix") format("eot"), url("/fonts/ff-din-regular.woff2") format("woff2"), url("/fonts/ff-din-regular.woff") format("woff"), url("/fonts/ff-din-regular.ttf") format("truetype");
 }
-
 @font-face {
-	font-family: "FF DIN Bold";
-	src: url("/fonts/ff-din-bold.eot?#iefix");
-	src: url("/fonts/ff-din-bold.eot?#iefix") format("eot"), url("/fonts/ff-din-bold.woff2") format("woff2"), url("/fonts/ff-din-bold.woff") format("woff"), url("/fonts/ff-din-bold.ttf") format("truetype");
+  font-family: "FF DIN Bold";
+  src: url("/fonts/ff-din-bold.eot?#iefix");
+  src: url("/fonts/ff-din-bold.eot?#iefix") format("eot"), url("/fonts/ff-din-bold.woff2") format("woff2"), url("/fonts/ff-din-bold.woff") format("woff"), url("/fonts/ff-din-bold.ttf") format("truetype");
 }
-
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 body {
-	font-family: "FF DIN Regular", helvetica, sans-serif;
-	font-size: 16px;
+  font-family: "FF DIN Regular", helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
 }
-
 img {
-	max-width: 100%;
+  display: block;
+  vertical-align: bottom;
+  max-width: 100%;
 }
-
 .group:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-
+.highlight {
+  background-color: #0066FF;
+}
+.clear {
+  clear: both;
+}
 
 
 /* Typography */
-
 h1, h2, p {
-	margin-top: -10px;
+  font-size: 36px;
+  font-family: "FF DIN Regular";
+  font-weight: normal;
+  color: #FFFFFF;
 }
-
-h1, h2 {
-	font-size: 40px;
-	line-height: 1.5;
-	font-weight: bold;
-	color: #ffffff;
-}
-
-h1.introduction {
-	font-weight: normal;
-}
-
-h2 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #bbbbbb;
-	border-bottom: 1px solid #eeeeee;
-}
-
-p {
-	font-size: 40px;
-	line-height: 1.5;
-	color: #bbbbbb;
-}
-
-.highlight p {
-	color: #ffffff;
-}
-
-li {
-	list-style: none;
-}
-
-a:link, a:visited, a:hover, a:active {
-	color: #0066ff;
-	text-decoration: none;
-}
-
 strong {
-	font-family: "FF DIN Bold";
+  font-family: "FF DIN Bold";
 }
-
-@media screen and (max-width: 1500px) {
-	h1, h2 {
-		font-size: 35px;
-	}
-}
-
-@media screen and (max-width: 1250px) {
-	h1, h2, p {
-		font-size: 30px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	h1, h2, p {
-		font-size: 25px;
-		margin-top: -5px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	h1, h2, p {
-		font-size: 20px;
-		margin-top: -4px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	h1, h2, p {
-		font-size: 15px;
-		margin-top: -2px;
-	}
-}
-
 
 
 /* Containers */
-
-.header-inner, .block-inner {
-	max-width: 1500px;
-	margin: 0 auto;
+section, header {
+  padding: 80px 0;
+  clear: both;
 }
-
-header, .block {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.block {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-.highlight {
-	background-color: #0066ff;
-}
-
-.block.half-top-padding {
-	padding-top: 50px;
-}
-
-.no-bottom-padding {
-	padding-bottom: 0;
-}
-
-@media screen and (max-width: 1500px) {
-	header, .block {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	.block {
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-	.block.half-top-padding {
-		padding-top: 35px;
-	}
-	.highlight {
-		padding-bottom: 70px;
-	}
-	.no-bottom-padding {
-		padding-bottom: 0;
-	}
-}
-
-@media screen and (max-width: 1250px) {
-	header, .block {
-		padding-left: 4%;
-		padding-right: 4%;
-	}
-	.block {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-	.block.half-top-padding {
-		padding-top: 30px;
-	}
-	.highlight {
-		padding-bottom: 60px;
-	}
-	.no-bottom-padding {
-		padding-bottom: 0;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	header, .block {
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-	.block {
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	.block.half-top-padding {
-		padding-top: 25px;
-	}
-	.highlight {
-		padding-bottom: 50px;
-	}
-	.no-bottom-padding {
-		padding-bottom: 0;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	header, .block {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
-	.block {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	.block.half-top-padding {
-		padding-top: 20px;
-	}
-	.highlight {
-		padding-bottom: 40px;
-	}
-	.no-bottom-padding {
-		padding-bottom: 0;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.highlight h2 {
-		margin-top: -5px;
-	}
-	.block {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.block.half-top-padding {
-		padding-top: 15px;
-	}
-	.highlight {
-		padding-bottom: 30px;
-	}
-	.no-bottom-padding {
-		padding-bottom: 0;
-	}
+.block-inner {
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 
 
 /* Header */
 
-header .header-inner {
-	padding: 50px 0;
-}
 
-header img {
-	width: 100px;
-	vertical-align: top;
+/* Portfolio */
+.portfolio img {
+  float: left;
+  margin: 0 40px 80px 0;
 }
-
-@media screen and (max-width: 750px) {
-	header .header-inner {
-		padding: 25px 0;
-	}
-	header img {
-		width: 75px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	header .header-inner {
-		padding: 15px 0;
-	}
-	header img {
-		width: 65px;
-	}
+.portfolio h2 {
+  margin: 0 0 40px 0;
+  color: #000000;
 }
 
 
 
-/* Work */
+/* Media Queries */
 
-.work section.block img {
-	margin: 0 auto;
-	display: block;
+@media screen and (max-width: 1500px) {
 }
-
-.work .block .suggestion-box,
-.work .block .mockup-review,
-.work .block .everyday-epicure,
-.work .block .the-hub {
-	width: 50%;
+@media screen and (max-width: 1250px) {
 }
-
-.work section.block p {
-	text-align: center;
-}
-
 @media screen and (max-width: 1000px) {
-	.work .block .suggestion-box,
-	.work .block .mockup-review,
-	.work .block .everyday-epicure,
-	.work .block .the-hub {
-		width: 60%;
-	}
 }
-
 @media screen and (max-width: 750px) {
-	.work .block .suggestion-box,
-	.work .block .mockup-review,
-	.work .block .everyday-epicure,
-	.work .block .the-hub {
-		width: 70%;
-	}
 }
-
 @media screen and (max-width: 500px) {
-	.work .block .suggestion-box,
-	.work .block .mockup-review,
-	.work .block .everyday-epicure,
-	.work .block .the-hub {
-		width: 80%;
-	}
 }

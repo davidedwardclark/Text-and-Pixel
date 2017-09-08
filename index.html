@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Text &amp; Pixel</title>
-	<meta name="description" content="Text and Pixel specialises in identity design, web interface design and information architecture.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/screen.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Text &amp; Pixel</title>
+  <meta name="description" content="Text and Pixel specialises in identity design, web interface design and information architecture.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/screen.css">
 </head>
 <body>
-	<header>
-		<div class="header-inner">
-			<img src="/img/logo.png" alt="A colourful bee" />
-		</div>
-	</header>
-	<section class="block highlight">
-		<div class="block-inner">
-			<h1 class="introduction"><strong>Text&amp;Pixel</strong> specialises in designing identities and making web interfaces. We craft simple and beautiful layouts with an emphasis on type, grids, icons, and colour.</h1>
-		</div>
-	</section>
-	<section class="block">
-		<div class="block-inner">
-			<img src="/img/home/work.png" alt="Portfolio pieces" />
-		</div>
-	</section>
-	<section class="block highlight no-bottom-padding">
-		<div class="block-inner">
-			<img src="/img/home/clients.png" alt="Client logos: Cisco, Hyatt, Kixeye, Critical Mass, Epicure" />
-		</div>
-	</section>
-	<section class="block highlight no-bottom-padding">
-		<div class="block-inner">
-			<p>&ldquo;[David] is a talented web developer [&hellip;] constantly pushing himself to be on top of emerging technologies. His code is of good quality and he is always conscious of web standards in his work.&rdquo; &mdash;Douglas Riches, Web Development Manager, Hyatt Account</p>
-		</div>
-	</section>
-	<section class="block highlight no-bottom-padding">
-		<div class="block-inner">
-			<p>&ldquo;[David] enjoys a good team dynamic, and brings energy to the group.&rdquo; &mdash;Jonathan Barrett, Technology Director, Critical Mass</p>
-		</div>
-	</section>
-	<section class="block highlight no-bottom-padding">
-		<div class="block-inner">
-			<p>Email: david@textandpixel.com<br/>
-			Phone: 1 (250) 514-8933</p>
-		</div>
-	</section>
-	<section class="block highlight">
-		<div class="block-inner">
-			<p>Text&amp;Pixel &copy; <time class="year"></time></p>
-		</div>
-	</section>
-	<script>
-		var currentYear = new Date().getFullYear();
-		var timeContainer = document.querySelector(".year");
-		timeContainer.innerHTML = currentYear;
-	</script>
+  <header>
+    <div class="block-inner">
+      <img src="/img/logo.svg" width="100" alt="A colourful bee" />
+    </div>
+  </header>
+  <section class="highlight">
+    <div class="block-inner">
+      <h1><strong>Text&amp;Pixel</strong><br/>Interface design and front end development.</h1>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="block-inner">
+      <h2 class="clear">Cisco Systems</h2>
+      <img src="/img/cisco-1.png" width="139" alt="Cisco mockup">
+      <img src="/img/cisco-2.png" width="139" alt="Cisco mockup">
+      <img src="/img/cisco-3.png" width="426" alt="Cisco mockup">
+      <h2 class="clear">Ozy Media</h2>
+      <img src="/img/ozy-1.png" width="519" alt="Ozy mockup">
+      <img src="/img/ozy-2.png" width="438" alt="Ozy mockup">
+      <h2>Epicure</h2>
+      <h2>Priologic Software</h2>
+    </div>
+  </section>
+  <section class="highlight">
+    <div class="block-inner">
+      <blockquote>
+        <p>&ldquo;David is a talented web developer [&hellip;] constantly pushing himself to be on top of emerging technologies. His code is of good quality and he is always conscious of web standards in his work.&rdquo; &mdash;Douglas Riches, Web Development Manager, Hyatt Account</p>
+        <img src="" alt="">
+        <p class="author">Douglas Riches</p>
+        <p class="position">Web Development Manager, Hyatt Account</p>
+      </blockquote>
+      <blockquote>
+        <p>&ldquo;David enjoys a good team dynamic, and brings energy to the group.&rdquo; &mdash;Douglas Riches, Web Development Manager, Hyatt Account</p>
+        <img src="" alt="">
+        <p class="author">Jonathan Barrett</p>
+        <p class="position">Technology Director, Critical Mass</p>
+      </blockquote>
+      <h2>Contact</h2>
+      <p>david@textandpixel.com</p>
+      <p>250 514 8933</p>
+      <h2>Location</h2>
+      <p>Victoria, BC, Canada.</p>
+      <p>&copy; <time class="year"></time> Text and Pixel Design Inc.</p>
+    </div>
+  </section>
+  <script>
+    var currentYear = new Date().getFullYear();
+    var timeContainer = document.querySelector(".year");
+    timeContainer.innerHTML = currentYear;
+  </script>
 </body>
 </html>
