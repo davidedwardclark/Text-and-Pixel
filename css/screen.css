@@ -89,6 +89,9 @@ footer, .highlight {
   margin: 0 0 40px 0;
   color: #000000;
 }
+.portfolio .no-right-side {
+  margin-right: 0;
+}
 
 
 
@@ -192,7 +195,7 @@ footer h2, .legal {
   .portfolio img {
     margin: 0 15px 15px 0;
   }
-  .portfolio .right-side {
+  .portfolio .mobile-right-side {
     margin-right: 0;
   }
   .portfolio h2 {
