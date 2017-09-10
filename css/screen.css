@@ -12,17 +12,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*:before, *:after {
   box-sizing: inherit;
 }
 body {
-  font-family: "FF DIN Regular", helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: normal;
+  background-color: #0066FF;
 }
 img {
   display: block;
@@ -34,45 +33,57 @@ img {
   display: table;
   clear: both;
 }
-.highlight {
-  background-color: #0066FF;
-}
 .clear {
   clear: both;
 }
 
 
+
 /* Typography */
-h1, h2, p {
-  font-size: 36px;
-  font-family: "FF DIN Regular";
+body, h1, h2, p, blockquote {
+  font-family: "FF DIN Regular", helvetica, sans-serif;
   font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
   color: #FFFFFF;
 }
 strong {
-  font-family: "FF DIN Bold";
+  font-family: "FF DIN Bold", helvetica, sans-serif;
+  font-weight: bold;
 }
 
 
+
 /* Containers */
-section, header {
+section, header, footer {
   padding: 80px 0;
   clear: both;
 }
 .block-inner {
-  max-width: 1120px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 100px;
+}
+header, .portfolio {
+  background-color: #FFFFFF;
+}
+footer, .highlight {
+  background-color: #0066FF;
 }
 
 
 
-/* Header */
-
-
 /* Portfolio */
+.portfolio {
+  padding: 80px 0 0 0;
+}
+.portfolio .portfolio-unit {
+  display: inline-block;
+  margin: 0 0 40px 0;
+}
 .portfolio img {
   float: left;
-  margin: 0 40px 80px 0;
+  margin: 0 40px 40px 0;
 }
 .portfolio h2 {
   margin: 0 0 40px 0;
@@ -81,15 +92,128 @@ section, header {
 
 
 
-/* Media Queries */
+/* Quotes */
+blockquote {
+  margin-bottom: 80px;
+}
+blockquote img {
+  float: left;
+  margin-right: 20px;
+}
+blockquote .quote {
+  margin-bottom: 20px;
+}
+blockquote .author, blockquote .position {
+  font-size: 24px;
+  line-height: 34px;
+}
+blockquote .author {
+  font-family: "FF DIN Bold", helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+}
 
-@media screen and (max-width: 1500px) {
+
+
+/* Footer */
+footer h2 {
+  font-family: "FF DIN Bold", helvetica, sans-serif;
+  font-weight: bold;
 }
+footer h2, .legal {
+  margin-top: 80px;
+}
+.legal {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+
+
+/* Media Queries */
 @media screen and (max-width: 1250px) {
-}
-@media screen and (max-width: 1000px) {
-}
-@media screen and (max-width: 750px) {
+  .block-inner {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }
 @media screen and (max-width: 500px) {
+  section, header, footer {
+    padding: 40px 0;
+  }
+  .block-inner {
+    padding: 0 25px;
+  }
+  body, h1, h2, p, blockquote {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .portfolio {
+    padding: 40px 0 0 0;
+  }
+  .portfolio .portfolio-unit {
+    margin: 0 0 20px 0;
+  }
+  .portfolio img {
+    margin: 0 20px 20px 0;
+  }
+  .portfolio h2 {
+    margin: 0 0 20px 0;
+  }
+  blockquote {
+    margin-bottom: 40px;
+  }
+  footer h2, .legal {
+    margin-top: 40px;
+  }
+  .legal, blockquote .author, blockquote .position {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section, header, footer {
+    padding: 30px 0;
+  }
+  .block-inner {
+    padding: 0 15px;
+  }
+  body, h1, h2, p, blockquote {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .portfolio {
+    padding: 30px 0 0 0;
+  }
+  .portfolio .portfolio-unit {
+    margin: 0 0 15px 0;
+  }
+  .portfolio img {
+    margin: 0 15px 15px 0;
+  }
+  .portfolio .right-side {
+    margin-right: 0;
+  }
+  .portfolio h2 {
+    margin: 0 0 15px 0;
+  }
+  blockquote {
+    margin-bottom: 30px;
+  }
+  blockquote img {
+    width: 60px;
+  }
+  footer h2, .legal {
+    margin-top: 30px;
+  }
+  .legal, blockquote .author, blockquote .position {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .portfolio .mobile {
+    width: 137px;
+  }
 }
