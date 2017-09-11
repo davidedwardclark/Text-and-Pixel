@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Text &amp; Pixel</title>
-  <meta name="description" content="Text and Pixel specialises in identity design, web interface design and information architecture.">
+  <meta name="description" content="Text and Pixel specialises in interface design, and front end development">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="/css/screen.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
       <div class="portfolio-unit">
         <h2>Epicure</h2>
         <img src="/img/epicure-1.png" width="242" alt="Epicure mockup">
-        <img src="/img/epicure-2.png" width="242" alt="Epicure mockup">
+        <img src="/img/epicure-2.png" width="242" class="no-right-side-tablet" alt="Epicure mockup">
       </div>
       <div class="portfolio-unit">
         <h2>Priologic Software</h2>
@@ -50,20 +51,32 @@
         <p class="quote">&ldquo;David is a talented web developer who is constantly pushing himself to be on top of emerging technologies. His code is of good quality and he is always conscious of web standards in his work.&rdquo;</p>
         <img src="/img/douglas-riches.png" width="80" alt="Douglas Riches">
         <p class="author">Douglas Riches</p>
-        <p class="position">Web Development Manager, Hyatt Account</p>
+        <p class="position">Manager, Hyatt Account</p>
       </blockquote>
       <h2>Contact</h2>
       <p>david@textandpixel.com</p>
-      <p>250 514 8933</p>
+      <p><a href="tel:+1-250-514-8933">250 514 8933</a></p>
       <h2>Location</h2>
       <p>Victoria, BC, Canada</p>
       <p class="legal">&copy; <time class="year"></time> Text and Pixel Design Inc</p>
     </div>
   </footer>
   <script>
+
+    // Set Year
     var currentYear = new Date().getFullYear();
-    var timeContainer = document.querySelector(".year");
-    timeContainer.innerHTML = currentYear;
+    document.querySelector('.year').innerHTML = currentYear;
+
+    // Change Background Color
+    window.addEventListener('scroll', function(event) {
+      var element = event.target.scrollingElement;
+      var colour = '#FFFFFF';
+      if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+        colour = '#0066FF';
+      }
+      document.body.style.backgroundColor = colour;
+    });
+
   </script>
 </body>
 </html>

@@ -14,14 +14,16 @@
   padding: 0;
   box-sizing: inherit;
 }
-html {
-  box-sizing: border-box;
-}
 *:before, *:after {
   box-sizing: inherit;
 }
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
 body {
-  background-color: #0066FF;
+  height: 100%;
+  background-color: #FFFFFF;
 }
 img {
   display: block;
@@ -35,6 +37,10 @@ img {
 }
 .clear {
   clear: both;
+}
+a[href^="tel"] {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 
@@ -139,6 +145,11 @@ footer h2, .legal {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolio .no-right-side-tablet {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 500px) {
