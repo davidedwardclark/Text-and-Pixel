@@ -69,9 +69,9 @@
 
     // Change Background Color
     window.addEventListener('scroll', function(event) {
-      var element = event.target.scrollingElement;
+      var element = event.target.scrollingElement || event.target.activeElement;
       var colour = '#FFFFFF';
-      if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+      if (element.scrollHeight - element.scrollTop <= element.clientHeight) {
         colour = '#0066FF';
       }
       document.body.style.backgroundColor = colour;
