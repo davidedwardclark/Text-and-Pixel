@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Text &amp; Pixel</title>
+  <title>Text&amp;Pixel</title>
   <meta name="description" content="Text and Pixel specialises in interface design, and front end development">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -43,17 +43,17 @@
         <img src="/img/priologic-1.png" width="139" class="mobile" alt="Priologic mockup">
         <img src="/img/priologic-2.png" width="139" class="mobile no-right-side" alt="Priologic mockup">
       </div>
-    </div>
-  </section>
-  <footer>
-    <div class="block-inner">
       <blockquote class="group">
         <p class="quote">&ldquo;David is a talented web developer who is constantly pushing himself to be on top of emerging technologies. His code is of good quality and he is always conscious of web standards in his work.&rdquo;</p>
         <img src="/img/douglas-riches.png" width="80" alt="Douglas Riches">
         <p class="author">Douglas Riches</p>
         <p class="position">Manager, Hyatt Account</p>
       </blockquote>
-      <h2>Contact</h2>
+    </div>
+  </section>
+  <footer>
+    <div class="block-inner">
+      <h2 class="no-margin-top">Contact</h2>
       <p>david@textandpixel.com</p>
       <p><a href="tel:+1-250-514-8933">250 514 8933</a></p>
       <h2>Location</h2>
@@ -72,7 +72,7 @@
       var element = event.target.scrollingElement || event.target.activeElement;
       var colour = '#FFFFFF';
       if (element.scrollHeight - element.scrollTop <= element.clientHeight) {
-        colour = '#0066FF';
+        colour = '#E9E9E9';
       }
       document.body.style.backgroundColor = colour;
     });

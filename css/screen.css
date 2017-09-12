@@ -40,7 +40,7 @@ img {
 }
 a[href^="tel"] {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 
@@ -51,7 +51,7 @@ body, h1, h2, p, blockquote {
   font-weight: normal;
   font-size: 36px;
   line-height: 46px;
-  color: #FFFFFF;
+  color: #000000;
 }
 strong {
   font-family: "FF DIN Bold", helvetica, sans-serif;
@@ -74,7 +74,7 @@ header, .portfolio {
   background-color: #FFFFFF;
 }
 footer, .highlight {
-  background-color: #0066FF;
+  background-color: #E9E9E9;
 }
 
 
@@ -87,7 +87,7 @@ footer, .highlight {
   display: inline-block;
   margin: 0 0 40px 0;
 }
-.portfolio img {
+.portfolio .portfolio-unit img {
   float: left;
   margin: 0 40px 40px 0;
 }
@@ -103,11 +103,11 @@ footer, .highlight {
 
 /* Quotes */
 blockquote {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 blockquote img {
   float: left;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 blockquote .quote {
   margin-bottom: 20px;
@@ -131,6 +131,9 @@ footer h2 {
 }
 footer h2, .legal {
   margin-top: 80px;
+}
+footer h2.no-margin-top {
+  margin-top: 0;
 }
 .legal {
   font-size: 24px;
@@ -169,14 +172,14 @@ footer h2, .legal {
   .portfolio .portfolio-unit {
     margin: 0 0 20px 0;
   }
-  .portfolio img {
+  .portfolio .portfolio-unit img {
     margin: 0 20px 20px 0;
   }
   .portfolio h2 {
     margin: 0 0 20px 0;
   }
   blockquote {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   footer h2, .legal {
     margin-top: 40px;
@@ -203,17 +206,18 @@ footer h2, .legal {
   .portfolio .portfolio-unit {
     margin: 0 0 15px 0;
   }
-  .portfolio img {
+  .portfolio .portfolio-unit img {
     margin: 0 15px 15px 0;
   }
-  .portfolio .mobile-right-side {
+  .portfolio .portfolio-unit .mobile-right-side,
+  .portfolio .portfolio-unit .no-right-side {
     margin-right: 0;
   }
   .portfolio h2 {
     margin: 0 0 15px 0;
   }
   blockquote {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   blockquote img {
     width: 60px;
