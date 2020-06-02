@@ -2,87 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Text&Pixel</title>
-  <meta name="description" content="Text&Pixel is a design studio in Victoria, British Columbia specialising in information architecture, visual design, and software development.">
+  <title>Text & Pixel</title>
+  <meta name="description" content="Text & Pixel: Information architecture and visual design">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="stylesheet" href="/screen.css">
 </head>
 <body>
-  <header>
-    <div class="block-inner">
-      <img src="/img/logo.svg" width="100" alt="A colourful bee" />
-    </div>
-  </header>
-  <section class="highlight">
-    <div class="block-inner">
-      <h1><strong>Text&amp;Pixel</strong> is a design studio in Victoria, British Columbia specialising in content strategy, information architecture, and visual design.</h1>
-    </div>
-  </section>
-  <section class="portfolio">
-    <div class="block-inner">
-      <div class="portfolio-unit">
-        <h2>Cisco Systems</h2>
-        <img src="/img/cisco-1.jpg" width="180" alt="Cisco mockup">
-        <img src="/img/cisco-2.jpg" width="180" class="no-right-margin-on-tablet" alt="Cisco mockup">
-        <img src="/img/cisco-3.jpg" width="560" class="no-right-margin" alt="Cisco mockup">
-      </div>
-      <div class="portfolio-unit">
-        <h2>Ozy Media</h2>
-        <img src="/img/ozy-1.jpg" width="519" alt="Ozy mockup">
-        <img src="/img/ozy-2.jpg" width="438" class="no-right-margin" alt="Ozy mockup">
-      </div>
-      <div class="portfolio-unit">
-        <h2>Epicure</h2>
-        <img src="/img/epicure-1.jpg" width="280" alt="Epicure mockup">
-        <img src="/img/epicure-2.jpg" width="280" alt="Epicure mockup">
-      </div>
-      <div class="portfolio-unit">
-        <h2>Priologic Software</h2>
-        <img src="/img/priologic-1.jpg" width="180" alt="Priologic mockup">
-        <img src="/img/priologic-2.jpg" width="180" class="no-right-margin" alt="Priologic mockup">
-      </div>
-      <blockquote class="group">
-        <p class="quote">&ldquo;​David has talent and passion for design. His professionalism, timeliness, and especially his communication skills were exemplary. He struck the perfect balance between listening to our needs and advocating for good design principles.&rdquo;</p>
-        <img src="/img/rob-wighton.png" width="80" alt="Rob Wighton">
-        <p class="author">Rob Wighton</p>
-        <p class="position">Small Business Owner</p>
-      </blockquote>
-      <blockquote class="group">
-        <p class="quote">&ldquo;David is a talented web developer who is constantly pushing himself to be on top of emerging technologies. His code is of good quality and he is always conscious of web standards in his work.&rdquo;</p>
-        <img src="/img/douglas-riches.png" width="80" alt="Douglas Riches">
-        <p class="author">Douglas Riches</p>
-        <p class="position">Web Development Manager, Critical Mass</p>
-      </blockquote>
-    </div>
-  </section>
-  <footer>
-    <div class="block-inner">
-      <h2 class="no-margin-top">Contact</h2>
-      <p>david@textandpixel.com</p>
-      <p><a href="tel:+1-250-514-8933">250 514 8933</a></p>
-      <h2>Location</h2>
-      <p>Victoria, British Columbia, Canada</p>
-      <p class="legal">&copy; <time class="year"></time> Text&amp;Pixel</p>
-    </div>
-  </footer>
-  <script>
-
-    // Set Year
-    var currentYear = new Date().getFullYear();
-    document.querySelector('.year').innerHTML = currentYear;
-
-    // Change Background Color
-    window.addEventListener('scroll', function(event) {
-      var element = event.target.scrollingElement || event.target.activeElement;
-      var colour = '#FFFFFF';
-      if (element.scrollHeight - element.scrollTop <= element.clientHeight) {
-        colour = '#E9E9E9';
-      }
-      document.body.style.backgroundColor = colour;
-    });
-
-  </script>
+  <div class="container">
+    <img src="/img/logo.svg" width="100" id="logo" alt="Text & Pixel logo" />
+    <h1>Text &amp; Pixel</h1>
+    <h2>Services</h2>
+    <table>
+      <tr>
+        <td>
+          <ul>
+            <li>Identity design</li>
+            <li>Information architecture</li>
+            <li>User interface design</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Interaction design</li>
+            <li>Front end programming</li>
+            <li>Database development</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <h2>Clients</h2>
+    <ul>
+      <li>Hyatt</li>
+      <li>Cisco Systems</li>
+      <li>BC Government</li>
+    </ul>
+    <h2>Work</h2>
+    <img src="/img/project-2.png" class="project" alt="Project 2"><img src="/img/project-1.png" class="project" alt="Project 1"><img src="/img/project-3.png" class="project project-3" alt="Project 3"><img src="/img/project-4.png" class="project project-4" alt="Project 4">
+    <h2>Reviews</h2>
+    <p>&ldquo;Understood very quickly what we were trying to do and was able to direct the project to completion ahead of schedule. We look forward to working with Text & Pixel again.&rdquo;</p>
+    <p>&ldquo;Struck the perfect balance between listening to our needs and advocating for good design principles, and the end result was a website better than we had envisioned.&rdquo;</p>
+    <h2>Contact</h2>
+    <ul>
+      <li>647 526 7146</li>
+      <li><a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a></li>
+    </ul>
+  </div>
 </body>
 </html>
