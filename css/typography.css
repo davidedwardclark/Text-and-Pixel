@@ -1,0 +1,21 @@
+/* Headings */
+
+h1 {}
+h2 {}
+h3 {}
+
+
+/* Paragraphs and Lists */
+
+p {}
+li {}
+ul {}
+ol {}
+
+
+/* Links */
+
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
