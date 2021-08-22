@@ -8,6 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="icon" href="favicon-32.png" sizes="32x32">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/typography.css">
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/footer.css">
@@ -17,14 +18,13 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#">
-        <img src="/svg/text-pixel-icon.svg" alt="Text and Pixel Logo">
-        <img src="/svg/text-pixel-text.svg" alt="Text and Pixel">
-      </a>
-      <a href="#">about</a>
-      <a href="#">contact</a>
-    </nav>
+    <div class="header-inner">
+      <img src="/svg/logo.svg" alt="Text and Pixel Logo" class="logo">
+      <nav>
+        <a href="/about/">about</a>
+        <a href="/contact/">contact</a>
+      </nav>
+    </div>
   </header>
   <section id="home-main"></section>
   <section id="home-secondary"></section>
