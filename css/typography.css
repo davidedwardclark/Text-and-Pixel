@@ -1,22 +1,3 @@
-/* Fonts */
-
-@font-face {
-  font-family: "ProximaSoft-Regular";
-  src: url('/fonts/ProximaSoft-Regular.woff2') format('woff2'),
-       url('/fonts/ProximaSoft-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: "ProximaSoft-Italic";
-  src: url('/fonts/ProximaSoft-Italic.woff2') format('woff2'),
-       url('/fonts/ProximaSoft-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: "ProximaSoft-Bold";
-  src: url('/fonts/ProximaSoft-Bold.woff2') format('woff2'),
-       url('/fonts/ProximaSoft-Bold.woff') format('woff');
-}
-
-
 /* Top Level */
 
 html {

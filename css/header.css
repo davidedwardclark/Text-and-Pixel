@@ -9,22 +9,29 @@ header {
   margin: 0 auto;
   padding: 0 100px;
 }
-.logo {
+.logo, .home-logo-link {
   display: block;
   position: relative;
   width: 400px;
   top: 50%;
   transform: translateY(-50%);
 }
+.home-logo-link img {
+  display: block;
+  width: 400px;
+}
 nav {
   float: right;
   margin-top: 25px;
 }
-nav a:link, nav a:visited, nav a:hover, nav a:active {
+nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-nav a:first-child {
+nav .selected, nav a:first-child {
   margin-right: 64px;
+}
+nav .selected {
+  border-bottom: 3px solid #FFFFFF;
 }
