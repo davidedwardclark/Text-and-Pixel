@@ -29,7 +29,7 @@ nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   color: #FFFFFF;
   text-decoration: none;
 }
-nav .selected, nav a:first-child {
+nav span:first-child, nav a:first-child {
   margin-right: 64px;
 }
 nav .selected {
