@@ -10,6 +10,12 @@ footer {
   margin-top: -672px;
   background-color: #0066FF;
 }
+.grey-background {
+  background-color: #F6F6F6;
+}
+.grey-background a:link, .grey-background a:visited, .grey-background a:hover, .grey-background footer a:active {
+  color: #0066FF;
+}
 footer a:link, footer a:visited, footer a:hover, footer a:active {
   font-size: 2.65rem;
   color: #FFFFFF;
@@ -39,4 +45,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
   width: 100%;
   font-size: 1.7rem;
   color: #FFFFFF;
+}
+.grey-background .copyright {
+  color: #0066FF;
 }
