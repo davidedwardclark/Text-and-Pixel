@@ -1,0 +1,68 @@
+#home-masthead {
+  border: 1px solid red;
+}
+#home-masthead IMG {
+  display: block;
+  margin: auto;
+}
+.headline, .reviews-content {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.headline {
+  border: 1px solid purple;
+  text-align: center;
+  padding: 0 100px 0 100px;
+  margin-bottom: -200px;
+}
+.headline h1 {
+font-size: 4.5rem;
+color: #0166FF;
+text-align: center;
+margin: 0 auto;
+padding: 220px 0 100px 0;
+width: 610px;
+line-height: 4.3rem;
+border: 1px solid red;
+}
+.case-studies {
+  width: 1000px;
+  padding-bottom: -200px;
+  border: 1px solid red;
+}
+.reviews-back {
+  background: #0166FF;
+  color: #fff;
+}
+.reviews-content {
+  padding: 470px 100px 0 100px;
+}
+.reviews-content p {
+  padding-left: 67px;
+}
+.reviews-content h2 {
+font-size: 4.3rem;
+}
+.reviews-content h2:before {
+  font-family: arial;
+  content: "\25A0 ";
+  font-size: 6rem;
+  color: #00CB00;
+  padding-right: 30px;
+}
+#pinky{
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  border: 1px solid pink;
+  top: 10px;
+  z-index: 1;
+}
+.pink-strip {
+  width: 1500px;
+  opacity: 0.85;
+  display: block;
+  margin: 0 auto 0 auto;
+  position: relative;
+  border: 1px solid red;
+}
