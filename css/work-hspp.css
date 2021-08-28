@@ -1,0 +1,59 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+main {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.fas {
+  color: #FFE927;
+  font-size: 5rem;
+  padding: 0 40px 20px 0;
+}
+
+h2 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.title-section {
+  margin: 200px 0;
+}
+
+.title {
+  float: left;
+}
+
+.masthead{
+  float: right;
+}
+
+.type {
+  margin-right: 30px;
+  float: left;
+}
+
+.date {
+  float: right;
+}
+
+.type, .date {
+  border-left: .01em solid white;
+}
+
+.type ul, .date ul {
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0; 
+  padding-left: 20px;
+}
