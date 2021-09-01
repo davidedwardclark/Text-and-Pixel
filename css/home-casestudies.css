@@ -1,0 +1,37 @@
+
+#home-casestudies {
+  background: linear-gradient(to bottom,  #62A0FF 0%,#62A0FF 30%,#F7F7F7 30%,#F7F7F7 100%);
+  padding: 130px 250px 400px 250px;
+}
+.cases {
+  width: 49%;
+  display: inline-table;
+}
+.cases IMG {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.cases h2, .cases p {
+  color: #0166FF;
+}
+.cases h2 {
+  width: 335px;
+  min-height: 90px;
+  line-height: 4.5rem;
+}
+.cases p {
+  width: 415px;
+  line-height: 3rem;
+}
+.cases a {
+  color: #0166FF;
+  border-bottom: 4px solid #FF20A4;
+}
+.cases h2 {
+  font-size: 4.7rem;
+}
+.cases p, .cases a {
+  font-size: 2.8rem;
+  text-decoration: none;
+}
