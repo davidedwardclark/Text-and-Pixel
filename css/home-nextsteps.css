@@ -1,0 +1,37 @@
+#home-nextsteps IMG {
+  display: block;
+  margin: auto;
+  max-width: 492px;
+  margin-top: -269px;
+}
+#home-nextsteps h2 {
+  width: 791px;
+  margin: auto;
+  color: #0166FF;
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+#home-nextsteps h2 .br {
+  display: block;
+}
+#home-nextsteps .flinks {
+  width: 100%;
+  text-align: center;
+  margin: 180px 0 160px 0;
+}
+#home-nextsteps a {
+  margin: auto;
+  border-bottom: 10px solid #00CB00;
+  text-align: center;
+  color: #0166FF;
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0 10px 0;
+  margin: 0 190px 0 190px;
+}
+#home-nextsteps a:first-child {
+  border-bottom: 10px solid #FF20A4;
+}
