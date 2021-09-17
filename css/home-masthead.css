@@ -5,7 +5,7 @@
   top: 10px;
   z-index: 1;
 }
-.pink-strip {
+#pinky .pink-strip {
   width: 1500px;
   opacity: 0.85;
   display: block;
@@ -16,16 +16,16 @@
   display: block;
   margin: auto;
 }
-.headline, .reviews-content {
+#home-masthead .headline, #home-masthead .reviews-content {
   max-width: 1800px;
   margin: 0 auto;
 }
-.headline {
+#home-masthead .headline {
   text-align: center;
   padding: 0 100px 0 100px;
   margin-bottom: -200px;
 }
-.headline h1 {
+#home-masthead .headline h1 {
   font-size: 4.5rem;
   color: #0166FF;
   text-align: center;
@@ -34,17 +34,17 @@
   width: 610px;
   line-height: 4.3rem;
 }
-.case-studies {
+#home-masthead .case-studies {
   width: 1000px;
 }
-.reviews-back {
+#home-masthead .reviews-back {
   background: #0166FF;
   color: #fff;
 }
-.reviews-content {
+#home-masthead .reviews-content {
   padding: 365px 200px 60px 200px;
 }
-.reviews-content img {
+#home-masthead .reviews-content img {
   width: 127px;
   height: 127px;
   float: left;
@@ -52,26 +52,26 @@
   padding: 0 20px 0 0;
   box-sizing: content-box;
 }
-.reviews-content p, .reviews-content blockquote, .reviews-content a {
+#home-masthead .reviews-content p, #home-masthead .reviews-content blockquote, #home-masthead .reviews-content a {
   font-size: 2.5rem;
 }
-.reviews-content a {
+#home-masthead .reviews-content a, #home-masthead .reviews-content a:link, #home-masthead .reviews-content a:visited, #home-masthead .reviews-content a:hover, #home-masthead .reviews-content a:active {
   border-bottom: 4px solid #FF20A4;
 }
-.reviews-content blockquote {
+#home-masthead .reviews-content blockquote {
   width: 1150px;
   margin: 0;
   padding: 20px 0 30px 0;
   line-height: 3.3rem;
 }
-.reviews-content p {
+#home-masthead .reviews-content p {
   padding-left: 67px;
 }
-.reviews-content h2 {
+#home-masthead .reviews-content h2 {
   font-size: 4.3rem;
   padding-bottom: 25px;
 }
-.reviews-content h2:before {
+#home-masthead .reviews-content h2:before {
   font-family: arial;
   content: "\25A0 ";
   font-size: 6rem;
