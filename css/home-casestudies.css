@@ -3,37 +3,37 @@
   padding: 130px 0px 400px 0px;
   text-align: center;
 }
-.cases {
+#home-casestudies .cases {
   width: 400px;
   padding: 0 100px 0 100px;
   display: inline-table;
   text-align: left;
 }
-.cases img {
+#home-casestudies .cases img {
   width: 300px;
   display: block;
   margin: 0 auto;
 }
-.cases h2, .cases p {
+#home-casestudies .cases h2, #home-casestudies .cases p {
   color: #0166FF;
 }
-.cases h2 {
+#home-casestudies .cases h2 {
   width: 335px;
   min-height: 90px;
   line-height: 4.5rem;
 }
-.cases p {
+#home-casestudies .cases p {
   width: 415px;
   line-height: 3rem;
 }
-.cases a {
+#home-casestudies .cases a, #home-casestudies .cases a:link, #home-casestudies .cases a:visited, #home-casestudies .cases a:hover, #home-casestudies .cases a:active {
   color: #0166FF;
   border-bottom: 4px solid #FF20A4;
 }
-.cases h2 {
+#home-casestudies .cases h2 {
   font-size: 4.7rem;
 }
-.cases p, .cases a {
+#home-casestudies .cases p, #home-casestudies .cases a {
   font-size: 2.8rem;
   text-decoration: none;
 }
