@@ -20,7 +20,7 @@
   text-align: center;
   margin: 180px 0 160px 0;
 }
-#home-nextsteps a {
+#home-nextsteps a, #home-nextsteps a:link, #home-nextsteps a:visited, #home-nextsteps a:hover, #home-nextsteps a:active {
   margin: auto;
   border-bottom: 10px solid #00CB00;
   text-align: center;
