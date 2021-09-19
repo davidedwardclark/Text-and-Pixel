@@ -9,19 +9,17 @@ header {
   padding: 0 100px;
 }
 .logo, .home-logo-link {
-  display: block;
   position: relative;
   height: 60px;
   top: 50%;
   transform: translateY(-50%);
 }
 .home-logo-link img {
-  display: block;
   width: 400px;
 }
 nav {
   float: right;
-  margin-top: 25px;
+  margin-top: 92px;
 }
 nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;

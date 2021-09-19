@@ -1,0 +1,49 @@
+/* Sticky Footer
+   Reference: https://css-tricks.com/couple-takes-sticky-footer/
+*/
+main {
+  padding-bottom: 672px;
+}
+footer {
+  width: 100%;
+  height: 672px;
+}
+.grey-background {
+  background-color: #F6F6F6;
+}
+.grey-background a:link, .grey-background a:visited, .grey-background a:hover, .grey-background footer a:active {
+  color: #0066FF;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+  font-size: 2.65rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-inner {
+  max-width: 1800px;
+  height: 672px;
+  margin: 0 auto;
+  padding: 74px 100px 0 100px;
+  line-height: 5.7rem;
+}
+.social-media {
+  float: left;
+  width: 139.5px;
+  margin-right: 66px;
+  margin-bottom: 60px;
+}
+.contact {
+  float: left;
+}
+.social-media a, .contact a {
+  display: block;
+}
+.copyright {
+  float: left;
+  width: 100%;
+  font-size: 1.7rem;
+  color: #FFFFFF;
+}
+.grey-background .copyright {
+  color: #0066FF;
+}
