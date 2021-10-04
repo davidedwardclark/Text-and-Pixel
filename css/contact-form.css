@@ -3,13 +3,13 @@
   background: #0166FF;
 }
 #contact-form .form {
-  max-width: 1320px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 #contact-form .form h1 {
   padding: 90px 0;
 }
-#contact-form .form input {
+#contact-form .form input, #contact-form .form textarea {
   width: 45%;
   font-size: 3.5rem;
   color: #fff;
@@ -17,7 +17,7 @@
   border: none;
   border-bottom: 10px solid #FF20A4;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding-bottom: 13px;
 }
 #contact-form .form input:nth-child(3), #contact-form .form input:nth-child(4) {
@@ -26,10 +26,15 @@
 #contact-form .form input:nth-child(5), #contact-form .form input:nth-child(6) {
   border-bottom: 10px solid #fff;
 }
-#contact-form .form input:nth-child(7) {
+#contact-form .form input:nth-child(7), #contact-form .form textarea {
   width: 95%;
   border-bottom: 10px solid #C4C4C4;
 }
-#contact-form .form input:nth-child(8) {
-  border-bottom: 10px solid #C4C4C4;
+#contact-form .form button {
+  font-size: 3.5rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 10px solid #FF20A4;
+  margin: 150px 0 150px 0;
 }
