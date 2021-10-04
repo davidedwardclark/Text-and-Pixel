@@ -1,6 +1,24 @@
 #contact-address .address {
-  max-width: 1320px;
+  max-width: 1380px;
   margin: 0 auto;
   color: #0166FF;
   font-size: 3.5rem;
+  height: 420px;
+}
+#contact-address .address p {
+  float: left;
+  padding-right: 170px;
+  margin-top: 100px;
+  line-height: normal;
+  text-decoration: underline;
+}
+#contact-address .address address {
+  float: left;
+  padding-right: 200px;
+  margin-top: 100px;
+  font-style: normal;
+  line-height: normal;
+}
+#contact-address .address .br {
+  display: block;
 }
