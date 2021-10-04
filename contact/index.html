@@ -32,19 +32,20 @@
         <h1>We would love to hear from you!</h1>
         <form action="#">
           <input type="text" onfocus="this.value=''" id="fname" name="fname" value="First Name">
-          <input type="text" onfocus="this.value=''" id="lname" name="lname" value="Last Name">
-          <input type="text" onfocus="this.value=''" id="eaddress" name="eaddress" value="Email Address">
-          <input type="text" onfocus="this.value=''" id="organization" name="organization" value="Organization">
-          <input type="text" onfocus="this.value=''" id="role" name="role" value="Role">
-          <input type="text" onfocus="this.value=''" id="country" name="country" value="Country">
-          <input type="text" onfocus="this.value=''" id="tellus" name="tellus" value="Tell us a little bit about your project">
-          <input type="submit" value="Send">
+          <input type="text" id="lname" name="lname" value="Last Name">
+          <input type="text" id="eaddress" name="eaddress" value="Email Address">
+          <input type="text" id="organization" name="organization" value="Organization">
+          <input type="text" id="role" name="role" value="Role">
+          <input type="text" id="country" name="country" value="Country">
+          <textarea name="tellusarea" id="tellusarea" form="usrform">Tell us a little bit about your project</textarea>
+          <!--<input type="text" onfocus="this.value=''" id="tellus" name="tellus" value="Tell us a little bit about your project">-->
+          <button type="submit" value="Submit">Send</button>
         </form>
       </div>
     </section>
     <section id="contact-address">
       <div class="address">
-        <p>We work and live in Lotus Land.</p>
+        <p>We work and live in  <span class="br">Lotus Land.</span></p>
         <address>Victoria, BC, Canada
         <br/>563 Johnson Street
         <br/>contact@textandpixel.com
