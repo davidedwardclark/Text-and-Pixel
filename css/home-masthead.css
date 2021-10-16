@@ -6,8 +6,7 @@
   z-index: 1;
 }
 #pinky .pink-strip {
-  width: 1500px;
-  opacity: 0.85;
+  width: 1350px;
   display: block;
   margin: 0 auto 0 auto;
   position: relative;
@@ -17,7 +16,7 @@
   margin: auto;
 }
 #home-masthead .headline, #home-masthead .reviews-content {
-  max-width: 1800px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 #home-masthead .headline {
@@ -42,11 +41,12 @@
   color: #fff;
 }
 #home-masthead .reviews-content {
-  padding: 365px 200px 60px 200px;
+  padding: 195px 100px 60px 100px;
+  width: 1600px;
 }
 #home-masthead .reviews-content img {
-  width: 127px;
-  height: 127px;
+  width: 117px;
+  height: 117px;
   float: left;
   margin: 0 20px 20px 20px;
   padding: 0 20px 0 0;
@@ -57,24 +57,27 @@
 }
 #home-masthead .reviews-content a, #home-masthead .reviews-content a:link, #home-masthead .reviews-content a:visited, #home-masthead .reviews-content a:hover, #home-masthead .reviews-content a:active {
   border-bottom: 4px solid #FF20A4;
+  text-decoration: none;
+  color: #fff;
 }
 #home-masthead .reviews-content blockquote {
   width: 1150px;
   margin: 0;
   padding: 20px 0 30px 0;
-  line-height: 3.3rem;
+  margin-bottom: 20px;
+  line-height: 3rem;
 }
 #home-masthead .reviews-content p {
-  padding-left: 67px;
+  padding-left: 75px;
 }
 #home-masthead .reviews-content h2 {
-  font-size: 4.3rem;
+  font-size: 4.5rem;
   padding-bottom: 25px;
 }
 #home-masthead .reviews-content h2:before {
   font-family: arial;
   content: "\25A0 ";
-  font-size: 6rem;
+  font-size: 7.5rem;
   color: #00CB00;
   padding-right: 30px;
 }
