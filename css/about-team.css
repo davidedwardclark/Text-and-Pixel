@@ -1,6 +1,6 @@
 #about-team {
   background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 50%,#FFFFFF 50%,#FFFFFF 100%);
-  padding: 130px 0px 130px 0px;
+  padding: 110px 0px 90px 0px;
   color: #0166FF;
 }
 #about-team .team {
@@ -8,16 +8,16 @@
   margin: 0 auto;
 }
 #about-team .team h1 {
-  margin: 0 0 100px 40px;
+  margin: 0 0 150px 80px;
   font-size: 4.6rem;
   color: #fff;
 }
 #about-team .team h1:before {
   font-family: arial;
   content: "\25A0 ";
-  font-size: 6rem;
+  font-size: 9rem;
   color: #00CB00;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 #about-team .team .profile {
   width: 450px;
@@ -26,14 +26,15 @@
   text-align: left;
 }
 #about-team .team .profile img {
-  width: 400px;
+  width: 410px;
   display: block;
   margin: 0 auto;
 }
 #about-team .team .profile h2 {
+  margin-top: 55px;
   font-size: 4.5rem;
 }
 #about-team .team .profile p {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
 }
