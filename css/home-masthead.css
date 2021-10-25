@@ -2,11 +2,11 @@
   pointer-events: none;
   position: absolute;
   width: 100%;
-  top: 10px;
+  top: 0;
   z-index: 1;
 }
 #pinky .pink-strip {
-  width: 1350px;
+  width: 1525px;
   display: block;
   margin: 0 auto 0 auto;
   position: relative;
@@ -14,6 +14,7 @@
 #home-masthead img {
   display: block;
   margin: auto;
+  margin-top: 60px;
 }
 #home-masthead .headline, #home-masthead .reviews-content {
   max-width: 1500px;
@@ -22,7 +23,7 @@
 #home-masthead .headline {
   text-align: center;
   padding: 0 100px 0 100px;
-  margin-bottom: -200px;
+  margin-bottom: -225px;
 }
 #home-masthead .headline h1 {
   font-size: 4.5rem;
@@ -34,14 +35,14 @@
   line-height: 4.3rem;
 }
 #home-masthead .case-studies {
-  width: 1000px;
+  width: 1196px;
 }
 #home-masthead .reviews-back {
   background: #0166FF;
   color: #fff;
 }
 #home-masthead .reviews-content {
-  padding: 195px 100px 60px 100px;
+  padding: 260px 80px 55px 80px;
   width: 1600px;
 }
 #home-masthead .reviews-content img {
@@ -56,7 +57,7 @@
   font-size: 2.5rem;
 }
 #home-masthead .reviews-content a, #home-masthead .reviews-content a:link, #home-masthead .reviews-content a:visited, #home-masthead .reviews-content a:hover, #home-masthead .reviews-content a:active {
-  border-bottom: 4px solid #FF20A4;
+  border-bottom: 3px solid #FF20A4;
   text-decoration: none;
   color: #fff;
 }
@@ -68,11 +69,12 @@
   line-height: 3rem;
 }
 #home-masthead .reviews-content p {
+  padding-bottom: 30px;
   padding-left: 75px;
 }
 #home-masthead .reviews-content h2 {
   font-size: 4.5rem;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 #home-masthead .reviews-content h2:before {
   font-family: arial;
