@@ -25,14 +25,14 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
   max-width: 1600px;
   height: 672px;
   margin: 0 auto;
-  padding: 74px 100px 0 100px;
+  padding: 70px 100px 0 100px;
   line-height: 5.7rem;
 }
 .social-media {
   float: left;
   width: 139.5px;
-  margin-right: 66px;
-  margin-bottom: 60px;
+  margin-right: 70px;
+  margin-bottom: 70px;
 }
 .contact {
   float: left;
