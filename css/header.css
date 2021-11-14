@@ -51,7 +51,4 @@ nav .selected {
     background-size: cover;
     background-image: url('/svg/logo.svg');
   }
-  .header-inner {
-    border: 1px solid red;
-  }
 }
