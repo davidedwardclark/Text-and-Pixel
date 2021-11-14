@@ -6,7 +6,7 @@
   z-index: 1;
 }
 #pinky .pink-strip {
-  width: 1525px;
+  max-width: 1525px;
   display: block;
   margin: 0 auto 0 auto;
   position: relative;
@@ -35,7 +35,8 @@
   line-height: 4.3rem;
 }
 #home-masthead .case-studies {
-  width: 1196px;
+  width: 100%;
+  max-width: 1196px;
 }
 #home-masthead .reviews-back {
   background: #0166FF;
@@ -43,7 +44,7 @@
 }
 #home-masthead .reviews-content {
   padding: 260px 80px 55px 80px;
-  width: 1600px;
+  max-width: 1600px;
 }
 #home-masthead .reviews-content img {
   width: 117px;
@@ -62,7 +63,7 @@
   color: #fff;
 }
 #home-masthead .reviews-content blockquote {
-  width: 1150px;
+  max-width: 1150px;
   margin: 0;
   padding: 20px 0 30px 0;
   margin-bottom: 20px;
