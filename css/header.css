@@ -36,3 +36,22 @@ nav span:first-child, nav a:first-child {
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
+@media only screen and (max-width: 877px) {
+  .home-logo-link {
+    width: 100px;
+  }
+  .home-logo-link img {
+    display: none;
+  }
+  .home-logo-link:before {
+    content: "\0020 ";
+    display: block;
+    width: 100px;
+    height: 68px;
+    background-size: cover;
+    background-image: url('/svg/logo.svg');
+  }
+  .header-inner {
+    border: 1px solid red;
+  }
+}
