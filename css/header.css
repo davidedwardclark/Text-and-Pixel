@@ -36,6 +36,7 @@ nav span:first-child, nav a:first-child {
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
+nav .hamburger {display: none;}
 @media only screen and (max-width: 877px) {
   .home-logo-link {
     width: 100px;
@@ -51,4 +52,30 @@ nav .selected {
     background-size: cover;
     background-image: url('/svg/logo.svg');
   }
+  nav .hamburger {
+    display: block;
+    width: 80px;
+    margin-top: -60px;
+    float: right;
+  }
+  nav #myMobileLinks {
+    width: 100% !important;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    background-color: #0066FF;
+    margin-top: 50px;
+    padding: 20px 0;
+    display: none;
+    text-align: right;
+  }
+  nav #myMobileLinks a {
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 877px) {
+  nav .hamburger {
+    display: none;
+  }
+  nav #myMobileLinks {display: block;}
 }
