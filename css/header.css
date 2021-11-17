@@ -38,6 +38,9 @@ nav .selected {
 }
 nav .hamburger {display: none;}
 @media only screen and (max-width: 877px) {
+  header {
+    height: 226px;
+  }
   .home-logo-link {
     width: 100px;
   }
@@ -54,16 +57,15 @@ nav .hamburger {display: none;}
   }
   nav .hamburger {
     display: block;
-    width: 80px;
+    width: 58px;
     margin-top: -60px;
-    float: right;
+    margin-right: 0px !important;
   }
   nav #myMobileLinks {
     width: 100% !important;
     z-index: 1;
     position: absolute;
     left: 0;
-    background-color: #0066FF;
     margin-top: 50px;
     padding: 20px 0;
     display: none;
