@@ -49,3 +49,25 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 .grey-background .copyright {
   color: #0066FF;
 }
+@media only screen and (max-width: 504px) {
+  .footer-inner {
+    padding: 70px 45px 0 45px;
+  }
+  .social-media {
+    width: 100%;
+    column-count: 2;
+    border-bottom: 4px solid #fff;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .social-media a {
+    display: inline-table;
+  }
+  .contact {
+    float: none;
+    width: 100%;
+    border-bottom: 4px solid #fff;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+}
