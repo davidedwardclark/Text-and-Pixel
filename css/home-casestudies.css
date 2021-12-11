@@ -4,13 +4,13 @@
   text-align: center;
 }
 #home-casestudies .cases {
-  width: 400px;
+  max-width: 400px;
   padding: 0 100px 0 100px;
   display: inline-table;
   text-align: left;
 }
 #home-casestudies .cases img {
-  width: 335px;
+  max-width: 335px;
   display: block;
   margin: 0 auto;
 }
@@ -21,13 +21,15 @@
   color: #0166FF;
 }
 #home-casestudies .cases h2 {
-  width: 335px;
+  width: 100%;
+  max-width: 335px;
   min-height: 90px;
   line-height: 4.5rem;
   margin: 0 0 50px 0;
 }
 #home-casestudies .cases p {
-  width: 415px;
+  width: 100%;
+  max-width: 415px;
   line-height: 3rem;
   margin-bottom: 33px;
 }
@@ -41,4 +43,31 @@
 #home-casestudies .cases p, #home-casestudies .cases a {
   font-size: 2.8rem;
   text-decoration: none;
+}
+@media only screen and (max-width: 1234px) {
+  #home-casestudies .cases {
+    max-width: 350px;
+    padding: 0 10% 0 10%;
+  }
+  #home-casestudies .cases img {
+    max-width: 275px;
+  }
+}
+@media only screen and (max-width: 923px) {
+  #home-casestudies .cases {
+    padding: 0 5% 0 5%;
+  }
+}
+@media only screen and (max-width: 704px) {
+  #home-casestudies {
+    background: none;
+    padding: 0;
+    text-align: center;
+  }
+  #home-casestudies .cases {
+    background: linear-gradient(to bottom,  #62A0FF 0%,#62A0FF 30%,#F7F7F7 30%,#F7F7F7 100%);
+    padding: 120px 7% 120px 7%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
