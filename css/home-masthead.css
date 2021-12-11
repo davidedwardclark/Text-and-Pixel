@@ -76,6 +76,7 @@
 #home-masthead .reviews-content h2 {
   font-size: 4.5rem;
   padding-bottom: 20px;
+  line-height: 6rem;
 }
 #home-masthead .reviews-content h2:before {
   font-family: arial;
@@ -83,4 +84,48 @@
   font-size: 7.5rem;
   color: #00CB00;
   padding-right: 30px;
+}
+@media only screen and (max-width: 896px) {
+  #home-masthead .reviews-content h2:before {
+    display: none;
+  }
+  #home-masthead .reviews-content p {
+    padding-left: 0;
+  }
+  #home-masthead .reviews-content img {
+    float: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #home-masthead .headline h1 {
+    padding: 120px 0 50px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #home-masthead .headline {
+    padding: 0 70px 0 70px;
+  }
+  #home-masthead .headline h1 {
+    font-size: 3.5rem;
+    padding: 80px 0 30px 0;
+  }
+  #home-masthead .reviews-content {
+    padding: 210px 40px 35px 40px;
+  }
+  #home-masthead .reviews-content h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #home-masthead .headline {
+    padding: 0 9px 0 9px;
+  }
+  #home-masthead .headline h1 {
+    font-size: 3rem;
+    padding: 70px 0 20px 0;
+  }
+  #home-masthead .reviews-content h2 {
+    font-size: 3rem;
+  }
 }
