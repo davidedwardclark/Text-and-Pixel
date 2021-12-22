@@ -4,6 +4,7 @@
   color: #0166FF;
 }
 #about-team .team {
+  width: 100%;
   max-width: 1450px;
   margin: 0 auto;
 }
@@ -20,13 +21,15 @@
   padding-right: 50px;
 }
 #about-team .team .profile {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   padding: 0 30px 0 30px;
   display: inline-table;
   text-align: left;
 }
 #about-team .team .profile img {
-  width: 410px;
+  width: 100%;
+  max-width: 410px;
   display: block;
   margin: 0 auto;
   -webkit-box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.52);
@@ -40,4 +43,41 @@
 #about-team .team .profile p {
   font-size: 2.5rem;
   line-height: 3rem;
+}
+@media only screen and (max-width: 1358px) {
+  #about-team .team {
+    background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 34%,#FFFFFF 34%,#FFFFFF 100%);
+    text-align: center;
+  }
+  #about-team .team h1 {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 904px) {
+  #about-team .team {
+    background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 20%,#FFFFFF 20%,#FFFFFF 100%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #about-team .team {
+    background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 16%,#FFFFFF 16%,#FFFFFF 100%);
+    text-align: left;
+  }
+  #about-team .team h1 {
+    margin: 0 0 100px 30px;
+  }
+  #about-team .team h1:before {
+    display: none;
+  }
+  #about-team .team .profile {
+    width: 100%;
+    max-width: 100%;
+  }
+  #about-team .team .profile img {
+    max-width: 150px;
+    margin: 0 0;
+  }
+  #about-team .team .profile h2 {
+    font-size: 3.5rem;
+  }
 }
