@@ -55,6 +55,11 @@ nav .hamburger {display: none;}
     background-size: cover;
     background-image: url('/svg/logo.svg');
   }
+}
+@media only screen and (max-width: 577px) {
+  .header-inner {
+    padding: 0 61px;
+  }
   nav .hamburger {
     display: block;
     width: 58px;
@@ -75,7 +80,7 @@ nav .hamburger {display: none;}
     padding-right: 20px;
   }
 }
-@media only screen and (min-width: 877px) {
+@media only screen and (min-width: 577px) {
   nav .hamburger {
     display: none;
   }
