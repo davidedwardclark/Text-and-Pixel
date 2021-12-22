@@ -3,13 +3,16 @@
   color: #fff;
 }
 #about-values .values {
+  width: 100%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 160px 0 90px 0;
 }
 #about-values .values h1 {
-  margin: 0 0 130px 80px;
+  margin: 0 0 130px 0;
+  padding-left: 80px;
   font-size: 4.6rem;
+  line-height: 6rem;
 }
 #about-values .values h1:before {
   font-family: arial;
@@ -22,10 +25,11 @@
   width: 80px;
   position: relative;
   float: left;
-  margin-left: 160px;
+  left: 160px;
 }
 #about-values .values h2, #about-values .values p {
-  margin-left: 290px;
+  width: 100%;
+  padding-left: 290px;
 }
 #about-values .values h2 {
   font-size: 4.5rem;
@@ -33,6 +37,32 @@
 }
 #about-values .values p {
   font-size: 2.3rem;
-  width: 830px;
+  width: 100%;
+  max-width: 1230px;
   padding-bottom: 65px;
+}
+@media only screen and (max-width: 1220px) {
+  #about-values .values {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 160px 7% 90px 7%;
+  }
+  #about-values .values h1 {
+    padding-left: 0px;
+    margin: 0 0 130px 0;
+  }
+  #about-values .values h1:before {
+    display: none;
+  }
+  #about-values .values img {
+    width: 80px;
+    position: inherit;
+    float: none;
+    display: block;
+  }
+  #about-values .values h2, #about-values .values p {
+    padding-right: 40px;
+    padding-left: 0;
+  }
 }
