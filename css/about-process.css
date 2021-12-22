@@ -1,4 +1,5 @@
 #about-process .process {
+  width: 100%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 50px 0 30px 0;
@@ -6,12 +7,15 @@
 #about-process .process img {
   width: 100%;
 }
+#about-process .process .process-width {display: block;}
+#about-process .process .process-long {display: none;}
 #about-process .process h3 {
   color: #0166FF;
   margin: 0 0 100px 40px;
   font-size: 3.9rem;
   display: flex;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   line-height: 3.8rem;
 }
 #about-process .process h3:before {
@@ -22,4 +26,23 @@
   padding-right: 50px;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 860px) {
+  #about-process .process h3 {
+    color: #0166FF;
+    display: block;
+    padding: 0 7%;
+    margin: 50px 0 70px 0px;
+  }
+  #about-process .process h3:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #about-process .process .process-width {display: none;}
+  #about-process .process .process-long {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+  }
 }
