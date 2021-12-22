@@ -71,3 +71,8 @@
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 400px) {
+  #home-casestudies .cases {
+    padding: 120px 30px 120px 30px;
+  }
+}
