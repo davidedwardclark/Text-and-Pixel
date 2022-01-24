@@ -32,3 +32,18 @@ nav span:first-child, nav a:first-child {
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
+
+/* Tablet size */
+@media screen and (max-width: 1024px) {
+  .header-inner {
+    padding: 0 80px;
+  }
+}
+
+/* Mobile size */
+
+@media screen and (max-width: 480px) {
+  .header-inner {
+    padding: 0 20px;
+  }
+}
