@@ -3,7 +3,7 @@ Global
 ---------------------------- */
 
 html {
-    background-color: #0062F4;
+    background-color: #003366;
     color: white;
     /* background-image: url(../images/grid.png); */
     background-position: center;
@@ -18,6 +18,7 @@ html {
     font-size: 5rem;
     line-height: 5rem;
     margin: 0;
+    color: #FCBA19;
   }
   
   h2 {
@@ -29,13 +30,13 @@ html {
   section {
     transition: 1s;
   }
-  
+
   .section-container {
     max-width: 1600px;
     margin: 300px auto;
     padding: 0 100px;
   }
-  
+
   .blue-button {
     padding: 5px 10px;
     background: #0062F4;
@@ -63,7 +64,6 @@ html {
     h1 {
       font-size: 3.8rem;
       line-height: 3.8rem;
-      color: #FCBA19;
     }
   
     h2 {
@@ -107,7 +107,7 @@ html {
     position: relative;
   }
   
-  .masthead{
+  .masthead {
     position: absolute;
     right: 0;
   }
@@ -196,129 +196,54 @@ html {
   /* END Title */
   
   /* --------------
-  Section 1
+  Sections
   -------------- */
+
+  .section-container .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    column-gap: 10%;
+    row-gap: 50px;
+  }
+
+  .section-copy img {
+    max-width: 80px;
+  }
   
+  .section-img img {
+    max-width: 100%;
+  }
+
   .section-1-grid {
     display: grid;
-    position: relative;
     grid-template-columns: 60% 1fr;
     column-gap: 10%;
-    row-gap: 80px;
-    width: 100%;
-    height: 100%;
+    row-gap: 50px;
   }
 
-  .section-1-images {
-    max-width: 420px;
+  .section-1-copy p {
     position: relative;
-    margin: 0 auto;
-  }
-  
-  .section-1 img {
-    width: 100%;
-  }
-
-  .section-1-copy-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-
-  .section-1-copy {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    row-gap: 100px;
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .section-1-copy img {
-    width: 60px;
-  }
-
-  .section-1 .fas, .section-1 .far {
-    font-size: 4rem;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-  }
-    
-  .section-1 p {
-    position: relative;
-    margin-top: 0;
+  .section-1-img img {
+    max-width: 100%;
   }
 
   @media screen and (max-width: 1024px) {
+
+    .section-container .section-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
     .section-1-grid {
       grid-template-columns: 1fr;
     }
-  
-    .section-1-copy {
-      position: relative;
-    }
 
   }
-  
-  /* END Section 1 */
-  
-  /* ----------------------------
-  Section 2 
-  ---------------------------- */
-  
-  .section-2-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 160px;
-    row-gap: 80px;
-  }
-
-  .section-2-grid-item {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    column-gap: 40px;
-    row-gap: 80px;
-  }
-  
-  .section-2-num {
-    font-size: 6.4rem;
-    line-height: 70px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid white;
-    text-align: center;
-    margin: 0;
-  }
-
-  .section-2-copy p {
-    margin: 0;
-  }
-  
-  .section-2 img {
-    max-width: 100%;
-    padding-top: 40px;
-  }
-
-  @media screen and (max-width: 1024px) {
-
-    .section-2-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .section-2 .fas, .section-2 .far {
-      position: relative;
-      padding-top: 0;
-      padding-left: 0;
-      padding-bottom: 20px;
-    }
-
-  }
-  
-  /* END Section 2 */
-  
+   
   /* ----------------------------
   Testimonials 
   ---------------------------- */
@@ -467,8 +392,10 @@ html {
     margin-bottom: 40px;
   }
   
-  @media screen and (max-width: 1024px) {
+  /* END Hello section */
   
+  @media screen and (max-width: 768px) {
+
     .form-grid {
       grid-template-columns: 1fr;
       grid-template-areas: 
@@ -476,12 +403,12 @@ html {
         "txt"
         "email";
     }
-  
+
     .form-hello {
       margin-bottom: 40px;
     }
-  
+    
   }
-
-  /* END Hello section */
+  
+  /* END Sections */
   
