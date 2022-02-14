@@ -17,26 +17,26 @@
   <link rel="stylesheet" href="/css/home-nextsteps.css">
   <link rel="stylesheet" href="/css/footer.css">
   <script>
-  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myMobileLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function myFunctionScreen(y) {
-  var x = document.getElementById("myMobileLinks");
-  if (y.matches && x.style.display === "none") { // If media query matches
-    x.style.display = "block";
-  } else {
-  }
-}
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myMobileLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function myFunctionScreen(y) {
+      var x = document.getElementById("myMobileLinks");
+      if (y.matches && x.style.display === "none") { // If media query matches
+        x.style.display = "block";
+      } else {
+      }
+    }
 
-var y = window.matchMedia("(min-width: 577px)")
-myFunctionScreen(y) // Call listener function at run time
-y.addListener(myFunctionScreen) // Attach listener function on state changes
+    var y = window.matchMedia("(min-width: 577px)")
+    myFunctionScreen(y) // Call listener function at run time
+    y.addListener(myFunctionScreen) // Attach listener function on state changes
   </script>
 </head>
 <body>
@@ -78,7 +78,7 @@ y.addListener(myFunctionScreen) // Attach listener function on state changes
         <img src="/images/img-bc-government.png" alt="BC Government Image">
         <h2>BC Government Design System</h2>
         <p>Here is a brief description of what this project is about.</p>
-        <a href="/work/bc-government-design-system/">Read More</a>
+        <a href="/work/bcgds/">Read More</a>
       </div>
       <div class="cases">
         <img src="/images/img-hamis.png" alt="HAMIS Image">
