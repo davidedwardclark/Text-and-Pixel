@@ -1,3 +1,6 @@
+h1, h2, a {
+  transition: 1s;
+}
 #home-nextsteps img {
   display: block;
   margin: auto;
@@ -62,7 +65,7 @@
     text-align: center;
     text-decoration: none;
     padding: 0 0 10px 0;
-    margin: 70px 0 70px 0;
+    margin: 70px 30px 70px 30px;
     display: inline-block;
   }
 }
