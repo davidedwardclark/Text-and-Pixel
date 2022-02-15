@@ -18,16 +18,13 @@ h1 {
   font-size: 5rem;
   line-height: 5rem;
   margin: 0;
+  font-family: "ProximaSoft-Bold", helvetica, arial, sans-serif;
 }
 
 h2 {
   font-size: 3.2rem;
   line-height: 3.2rem;
   font-weight: 400;
-}
-
-section {
-  transition: 1s;
 }
 
 .section-container {
@@ -66,6 +63,14 @@ section {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  .section-container {
+    padding: 0 60px;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
 
   h1 {
@@ -99,108 +104,105 @@ Navigation
 /* END Navigation */
 
 /* ----------------------------
-Title 
----------------------------- */
-
-.title-section-container .fas {
-  color: #FFE927;
-  font-size: 6rem;
-  padding: 0 55px 20px 0;
-}
-
-.title-section {
-  display: grid;
-  grid-template-columns: 60% 1fr;
-  position: relative;
-}
-
-.masthead {
-  position: absolute;
-  right: 0;
-}
-
-.type {
-  padding-right: 40px;
-  float: left;
-}
-
-.date {
-  float: right;
-}
-
-.type, .date {
-  border-left: .01em solid white;
-}
-
-.type ul, .date ul {
-  list-style-type: none;
-  font-size: 1.8rem;
-  font-weight: 400;
-  width: 220px;
-  margin: 0; 
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 1480px) {
-
+  Title 
+  ---------------------------- */
+  
+  .title-section-container .fas {
+    color: #FFE927;
+    font-size: 6rem;
+    padding: 0 55px 20px 0;
+  }
+  
   .title-section {
-    grid-template-columns: 1fr;
-  }
-
-  .masthead {
+    display: grid;
+    grid-template-columns: 60% 1fr;
     position: relative;
-    padding-top: 100px;
   }
-
+  
+  .masthead {
+    position: absolute;
+    right: 0;
+  }
+  
   .type {
-    border-left: none;
+    padding-right: 40px;
+    float: left;
   }
-
-  .type ul {
-    padding-left: 0;
-  }
-
+  
   .date {
-    float: none;
-    display: inline-block;
+    float: right;
   }
-
-}
-
-@media screen and (max-width: 1024px) {
-
-  .title-section-container .fas {
-    font-size: 5rem;
-    padding: 0 45px 20px 0;
+  
+  .type, .date {
+    border-left: .01em solid white;
   }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  .title-section-container .fas {
-    font-size: 4rem;
-    padding: 0 35px 20px 0;
+  
+  .type ul, .date ul {
+    list-style-type: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 220px;
+    margin: 0; 
+    padding-left: 20px;
   }
-
-  .type {
-    display: block;
-    padding-right: 0;
-    padding-bottom: 20px;
+  
+  @media screen and (max-width: 1480px) {
+  
+    .title-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .masthead {
+      position: relative;
+      padding-top: 100px;
+    }
+  
+    .date {
+      float: none;
+      display: inline-block;
+    }
+  
   }
-
-  .date {
-    display: block;
-    border-left: none;
+  
+  @media screen and (max-width: 1024px) {
+  
+    .title-section-container .fas {
+      font-size: 5rem;
+      padding: 0 45px 20px 0;
+    }
+  
   }
+  
+  @media screen and (max-width: 768px) {
+  
+    .title-section-container .fas {
+      font-size: 4rem;
+      padding: 0 35px 20px 0;
+    }
+  
+    .type {
+      display: block;
+      padding-right: 0;
+      padding-bottom: 20px;
+      border-left: none;
+    }
 
-  .date ul {
-    padding-left: 0;
+    .type ul {
+      padding-left: 0;
+    }
+  
+    .date {
+      display: block;
+      border-left: none;
+    }
+  
+    .date ul {
+      padding-left: 0;
+    }
+  
   }
-
-}
-
-/* END Title */
+  
+  /* END Title */
 
 /* --------------
 Section 1
@@ -214,9 +216,10 @@ Section 1
 }
 
 .section-1-images {
-  max-width: 420px;
+  width: 420px;
   height: 480px;
   position: relative;
+  margin: 0 auto;
 }
 
 .section-1 img {
@@ -271,8 +274,15 @@ Section 1
     row-gap: 40px;
   }
 
-  .section-2-content {
-    padding: 0;
+  .section-1-images {
+    width: 360px;
+    height: 420px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .section-1 img {
+    width: 180px;
   }
 
   .section-1 p {
@@ -280,6 +290,23 @@ Section 1
     top: 0;
     transform: translateY(0);
     -webkit-transform: translateY(0);
+  }
+
+  .section-2-content {
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .section-1-images {
+    width: 100%;
+    height: 400px;
+  }
+
+  .section-1 img {
+    width: 160px;
   }
 
 }
@@ -372,7 +399,7 @@ blockquote {
 @media screen and (max-width: 768px) {
 
   .testimonial-container {
-    background: #004AB8;
+    background: #252424;
   }
 
   .testimonial {
