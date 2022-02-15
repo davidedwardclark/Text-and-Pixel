@@ -49,7 +49,12 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
 .grey-background .copyright {
   color: #0066FF;
 }
-@media only screen and (max-width: 504px) {
+@media only screen and (max-width: 550px) {
+  .footer-inner {
+    padding: 70px 45px 0 45px;
+  }
+}
+@media only screen and (max-width: 476px) {
   .footer-inner {
     padding: 70px 45px 0 45px;
   }
