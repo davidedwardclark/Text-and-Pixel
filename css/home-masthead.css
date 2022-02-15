@@ -1,3 +1,6 @@
+h1 {
+  transition: 1s;
+}
 #pinky {
   pointer-events: none;
   position: absolute;
@@ -50,9 +53,8 @@
   width: 117px;
   height: 117px;
   float: left;
-  margin: 0 20px 20px 20px;
-  padding: 0 20px 0 0;
-  box-sizing: content-box;
+  margin: 20px;
+  vertical-align: middle;
 }
 #home-masthead .reviews-content p, #home-masthead .reviews-content blockquote, #home-masthead .reviews-content a {
   font-size: 2.5rem;
@@ -65,7 +67,7 @@
 #home-masthead .reviews-content blockquote {
   max-width: 1150px;
   margin: 0;
-  padding: 20px 0 30px 0;
+  padding: 20px 0 30px 180px;
   margin-bottom: 20px;
   line-height: 3rem;
 }
@@ -92,13 +94,16 @@
   #home-masthead .reviews-content p {
     padding-left: 0;
   }
-  #home-masthead .reviews-content img {
-    float: none;
-  }
 }
 @media only screen and (max-width: 650px) {
   #home-masthead .headline h1 {
     padding: 120px 0 50px 0;
+  }
+  #home-masthead .reviews-content img {
+    float: none;
+  }
+  #home-masthead .reviews-content blockquote {
+    padding: 20px 0 30px 0;
   }
 }
 @media only screen and (max-width: 500px) {
