@@ -57,12 +57,14 @@
       <div class="form">
         <h1>We would love to hear from you!</h1>
         <form action="#">
-          <input type="text" onfocus="this.value=''" id="fname" name="fname" value="First Name">
-          <input type="text" id="lname" name="lname" value="Last Name">
-          <input type="text" id="eaddress" name="eaddress" value="Email Address">
-          <input type="text" id="organization" name="organization" value="Organization">
-          <input type="text" id="role" name="role" value="Role">
-          <input type="text" id="country" name="country" value="Country">
+          <div id="columns">
+            <input type="text" onfocus="this.value=''" id="fname" name="fname" value="First Name">
+            <input type="text" id="lname" name="lname" value="Last Name">
+            <input type="text" id="eaddress" name="eaddress" value="Email Address">
+            <input type="text" id="organization" name="organization" value="Organization">
+            <input type="text" id="role" name="role" value="Role">
+            <input type="text" id="country" name="country" value="Country">
+          </div>
           <textarea name="tellusarea" id="tellusarea" form="usrform">Tell us a little bit about your project</textarea>
           <!--<input type="text" onfocus="this.value=''" id="tellus" name="tellus" value="Tell us a little bit about your project">-->
           <button type="submit" value="Submit">Send</button>
