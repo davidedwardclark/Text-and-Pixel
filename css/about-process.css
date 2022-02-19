@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 50px 0 30px 0;
+  padding: 50px 33px 30px 33px;
 }
 #about-process .process img {
   width: 100%;
@@ -35,14 +35,23 @@
     margin: 50px 0 70px 0px;
   }
   #about-process .process h3:before {
-    display: none;
+    float: left;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (max-width: 750px) {
+  #about-process .process h3:before {
+    padding-bottom: 170px;
+  }
   #about-process .process .process-width {display: none;}
   #about-process .process .process-long {
     display: block;
     max-width: 300px;
     margin: auto;
+  }
+}
+@media only screen and (max-width: 504px) {
+  #about-process .process h3:before {
+    display: none;
   }
 }
