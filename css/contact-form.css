@@ -5,7 +5,7 @@
 #contact-form .form {
   width: 100%;
   max-width: 1580px;
-  padding-left: 200px;
+  padding: 0 200px;
   margin: 0 auto;
 }
 #contact-form .form h1 {
@@ -13,6 +13,10 @@
   font-size: 5rem;
   margin: 0;
   line-height: 6.8rem;
+}
+#contact-form .form #columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 #contact-form .form input, #contact-form .form textarea {
   width: 100%;
@@ -27,7 +31,7 @@
   padding-bottom: 27px;
 }
 #contact-form .form input:nth-child(2), #contact-form .form input:nth-child(4), #contact-form .form input:nth-child(6) {
-  margin-left: 150px;
+  margin-left: 10%;
 }
 #contact-form .form input:nth-child(3), #contact-form .form input:nth-child(4) {
   border-bottom: 10px solid #00CB00;
@@ -50,7 +54,7 @@
 }
 @media only screen and (max-width: 1440px) {
   #contact-form .form {
-    padding-left: 100px;
+    padding: 0 100px;
   }
 }
 @media only screen and (max-width: 1350px) {
@@ -62,8 +66,11 @@
   #contact-form .form {
     padding-bottom: 10px;
   }
+  #contact-form .form #columns {
+    display: block;
+  }
   #contact-form .form input, #contact-form .form textarea {
-    max-width: 730px;
+    max-width: 100%;
   }
   #contact-form .form input:nth-child(2), #contact-form .form input:nth-child(4), #contact-form .form input:nth-child(6) {
     margin-left: 0px;
@@ -74,14 +81,8 @@
     margin: 88px 0 80px 0;
   }
 }
-@media only screen and (max-width: 870px) {
-  #contact-form .form input, #contact-form .form textarea {
-    max-width: 530px;
-  }
-}
 @media only screen and (max-width: 670px) {
   #contact-form .form input, #contact-form .form textarea {
-    max-width: 430px;
     border-bottom: 5px solid #FF20A4;
   }
   #contact-form .form input:nth-child(3), #contact-form .form input:nth-child(4) {
@@ -96,30 +97,23 @@
 }
 @media only screen and (max-width: 540px) {
   #contact-form .form {
-    padding-left: 30px;
+    padding: 0 14% 50px 14%;
   }
   #contact-form .form h1 {
+    padding: 80px 0 100px 0;
     font-size: 4rem;
   }
   #contact-form .form input, #contact-form .form textarea {
     margin-bottom: 70px;
     padding-bottom: 25px;
-    max-width: 430px;
   }
+
 }
 @media only screen and (max-width: 470px) {
-  #contact-form .form {
-    padding-left: 20px;
-  }
   #contact-form .form input, #contact-form .form textarea {
-    max-width: 300px;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 370px) {
-  #contact-form .form {
-    padding-left: 11px;
-  }
-  #contact-form .form input, #contact-form .form textarea {
-    max-width: 265px;
-  }
+
 }
