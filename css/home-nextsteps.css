@@ -1,6 +1,3 @@
-h1, h2, a {
-  transition: 1s;
-}
 #home-nextsteps img {
   display: block;
   margin: auto;
@@ -9,9 +6,11 @@ h1, h2, a {
   margin-top: -269px;
 }
 #home-nextsteps h2 {
-  width: 100%
+  width: 100%;
   max-width: 791px;
   margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
   color: #0166FF;
   font-size: 4.2rem;
   line-height: 4.5rem;

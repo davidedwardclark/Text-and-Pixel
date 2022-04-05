@@ -1,6 +1,3 @@
-h1, h2 {
-  transition: 1s;
-}
 #home-casestudies {
   background: linear-gradient(to bottom,  #62A0FF 0%,#62A0FF 30%,#F7F7F7 30%,#F7F7F7 100%);
   padding: 120px 0px 370px 0px;
@@ -9,7 +6,6 @@ h1, h2 {
 #home-casestudies .cases {
   max-width: 400px;
   padding: 0 100px 0 100px;
-  display: inline-table;
   text-align: left;
 }
 #home-casestudies .cases img {
