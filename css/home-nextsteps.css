@@ -1,0 +1,88 @@
+#home-nextsteps img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 492px;
+  margin-top: -269px;
+}
+#home-nextsteps h2 {
+  width: 100%;
+  max-width: 791px;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #0166FF;
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+#home-nextsteps h2 .br {
+  display: block;
+}
+#home-nextsteps .flinks {
+  width: 100%;
+  text-align: center;
+  margin: 175px 0 160px 0;
+}
+#home-nextsteps a, #home-nextsteps a:link, #home-nextsteps a:visited, #home-nextsteps a:hover, #home-nextsteps a:active {
+  margin: auto;
+  border-bottom: 10px solid #00CB00;
+  text-align: center;
+  color: #0166FF;
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0 10px 0;
+  margin: 0 190px 0 190px;
+}
+#home-nextsteps a:first-child {
+  border-bottom: 10px solid #FF20A4;
+}
+@media only screen and (max-width: 1315px) {
+  #home-nextsteps h2 {
+    max-width: 711px;
+  }
+  #home-nextsteps a, #home-nextsteps a:link, #home-nextsteps a:visited, #home-nextsteps a:hover, #home-nextsteps a:active {
+    margin: 0 110px 0 110px;
+  }
+}
+@media only screen and (max-width: 953px) {
+  #home-nextsteps h2 {
+    max-width: 451px;
+  }
+  #home-nextsteps .flinks {
+    width: 100%;
+    display: block;
+    background-color: #F6F6F6;
+    margin: 80px 0 0 0;
+  }
+  #home-nextsteps a, #home-nextsteps a:link, #home-nextsteps a:visited, #home-nextsteps a:hover, #home-nextsteps a:active {
+    color: #0166FF;
+    font-size: 4.2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 0 10px 0;
+    margin: 70px 30px 70px 30px;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 704px) {
+  #home-nextsteps img {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #home-nextsteps h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #home-nextsteps h2 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}

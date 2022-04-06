@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact &#8211; Text &amp; Pixel</title>
+  <meta name="description" content="Contact the team at Text & Pixel.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/contact-form.css">
+  <link rel="stylesheet" href="/css/contact-address.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myMobileLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function myFunctionScreen(y) {
+      var x = document.getElementById("myMobileLinks");
+      if (y.matches && x.style.display === "none") { // If media query matches
+        x.style.display = "block";
+      } else {
+      }
+    }
+
+    var y = window.matchMedia("(min-width: 577px)")
+    myFunctionScreen(y) // Call listener function at run time
+    y.addListener(myFunctionScreen) // Attach listener function on state changes
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="home-logo-link"><img src="/svg/logo.svg" alt="Text and Pixel Logo"></a>
+      <nav>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <img src="/svg/hamburger.svg" alt="Text and Pixel"></a>
+        <div id="myMobileLinks">
+          <a href="/about/">about</a>
+          <span class="selected">contact</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="contact-form">
+      <div class="form">
+        <h1>We would love to hear from you!</h1>
+        <form action="#">
+          <div id="columns">
+            <input type="text" onfocus="this.value=''" id="fname" name="fname" value="First Name">
+            <input type="text" id="lname" name="lname" value="Last Name">
+            <input type="text" id="eaddress" name="eaddress" value="Email Address">
+            <input type="text" id="organization" name="organization" value="Organization">
+            <input type="text" id="role" name="role" value="Role">
+            <input type="text" id="country" name="country" value="Country">
+          </div>
+          <textarea name="tellusarea" id="tellusarea" form="usrform">Tell us a little bit about your project</textarea>
+          <!--<input type="text" onfocus="this.value=''" id="tellus" name="tellus" value="Tell us a little bit about your project">-->
+          <button type="submit" value="Submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact-address">
+      <div class="address">
+        <p>Victoria Office</p>
+        <address><strong>Text & Pixel</strong>
+        <span class="br">209-563 Johnson Street</span>
+        <span class="br">Victoria, BC, Canada</span>
+        <span class="br">V8W 1M2</span>
+        <span class="br"><a href="mailto:contact@textandpixel.com" class="addressemail">contact@textandpixel.com</a></span>
+        <span class="br"><a href="tel:+12506343779">250 634 3779</a></span></address>
+      </div>
+    </section>
+  </main>
+  <footer class="grey-background">
+    <div class="footer-inner">
+      <div class="social-media">
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://twitter.com/textandpixel/">twitter</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
+        <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+      </div>
+      <div class="contact">
+        <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
+        <a href="tel:12506343779">(250) 634-3779</a>
+      </div>
+      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time></time></span>
+    </div>
+  </footer>
+  <script>
+    const currentYear = new Date().getFullYear();
+    const yearContainer = document.querySelector('time');
+    yearContainer.innerHTML = currentYear;
+  </script>
+</body>
+</html>

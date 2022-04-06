@@ -1,0 +1,15 @@
+/* Box Sizing Border Box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sticky Footer */
+html, body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+}

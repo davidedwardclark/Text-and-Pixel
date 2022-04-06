@@ -1,0 +1,43 @@
+/* Top Level */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "ProximaSoft-Regular", helvetica, arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+
+/* Headings */
+
+h1 {}
+h2 {}
+h3 {}
+
+
+/* Paragraphs and Lists */
+
+p {}
+li {}
+ul {}
+ol {}
+
+
+/* Bold & Italics */
+
+strong {
+  font-family: "ProximaSoft-Bold", helvetica, arial, sans-serif;
+}
+em {
+  font-family: "ProximaSoft-Italic", helvetica, arial, sans-serif;
+}
+
+
+/* Links */
+
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
