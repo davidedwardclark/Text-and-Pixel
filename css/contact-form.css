@@ -17,6 +17,17 @@
 #contact-form .form #columns {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 40px;
+}
+#contact-form .form label {
+  font-size: 2rem;
+}
+#contact-form .form .message {
+  width: 100%;
+  max-width: 530px;
+  font-size: 2rem;
+  color: #fff;
+  background: transparent;
 }
 #contact-form .form input, #contact-form .form textarea {
   width: 100%;
@@ -28,6 +39,7 @@
   border-bottom: 10px solid #FF20A4;
   margin-right: 10px;
   margin-bottom: 90px;
+  padding-top: 10px;
   padding-bottom: 27px;
 }
 #contact-form .form input:nth-child(2), #contact-form .form input:nth-child(4), #contact-form .form input:nth-child(6) {
@@ -49,8 +61,12 @@
   background: transparent;
   border: none;
   border-bottom: 3px solid #FF20A4;
-  margin: 288px 0 150px 0;
+  margin-bottom: 150px;
   padding: 0;
+  cursor: pointer;
+}
+#contact-form .hidden {
+  display: none;
 }
 @media only screen and (max-width: 1440px) {
   #contact-form .form {
@@ -78,7 +94,7 @@
   #contact-form .form button {
     display: block;
     text-align: left;
-    margin: 88px 0 80px 0;
+    margin-bottom: 80px;
   }
 }
 @media only screen and (max-width: 670px) {

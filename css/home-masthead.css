@@ -26,6 +26,7 @@
   margin-bottom: -225px;
 }
 #home-masthead .headline h1 {
+  position: relative;
   font-size: 4.5rem;
   color: #0166FF;
   text-align: center;
@@ -33,6 +34,7 @@
   padding: 220px 0 100px 0;
   max-width: 610px;
   line-height: 4.3rem;
+  z-index: 2;
 }
 #home-masthead .case-studies {
   width: 100%;
