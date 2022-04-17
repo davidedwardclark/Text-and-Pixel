@@ -58,38 +58,37 @@
         <h1>We would love to hear from you!</h1>
         <form
           action="https://formspree.io/f/xjvlenkk"
-          method="POST"
-        >
+          method="POST">
           <input name="subject" value="Contact form" class="hidden">
           <div id="columns">
-            <label>
-              First Name*
+            <div class="field">
+              <label for="fname">First Name*</label>
               <input type="text" onfocus="this.value=''" id="fname" name="fname" required>
-            </label>
-            <label>
-              Last Name
+            </div>
+            <div class="field">
+              <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lname">
-            </label>
-            <label>
-              Email Address*
+            </div>
+            <div class="field">
+              <label for="eaddress">Email Address*</label>
               <input type="text" id="eaddress" name="eaddress" required>
-            </label>
-            <label>
-              Organization
+            </div>
+            <div class="field">
+              <label for="organization">Organization</label>
               <input type="text" id="organization" name="organization">
-            </label>
-            <label>
-              Role &nbsp;
+            </div>
+            <div class="field">
+              <label for="role">Role</label>
               <input type="text" id="role" name="role">
-            </label>
-            <label>
-              Country
+            </div>
+            <div class="field">
+              <label for="country">Country</label>
               <input type="text" id="country" name="country">
-            </label>
-            <label class="message">
-              Tell us a little bit about your project
+            </div>
+            <div class="field">
+              <label class="message" for="tellusarea">Tell us about your project</label>
               <textarea name="tellusarea" id="tellusarea" form="usrform"></textarea>
-            </label>
+            </div>
           </div>
           <button type="submit" value="Submit">Send</button>
         </form>
@@ -110,10 +109,10 @@
   <footer class="grey-background">
     <div class="footer-inner">
       <div class="social-media">
-        <a href="https://www.instagram.com/textandpixel/">instagram</a>
         <a href="https://twitter.com/textandpixel/">twitter</a>
-        <a href="https://www.facebook.com/textandpixel/">facebook</a>
         <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
       </div>
       <div class="contact">
         <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
