@@ -14,18 +14,41 @@
   <link rel="stylesheet" href="/css/work-header.css">
   <link rel="stylesheet" href="/css/work-footer.css">
   <link rel="stylesheet" href="/css/work-bcgds.css">
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myMobileLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function myFunctionScreen(y) {
+      var x = document.getElementById("myMobileLinks");
+      if (y.matches && x.style.display === "none") { // If media query matches
+        x.style.display = "block";
+      } else {
+      }
+    }
+    var y = window.matchMedia("(min-width: 577px)")
+    myFunctionScreen(y) // Call listener function at run time
+    y.addListener(myFunctionScreen) // Attach listener function on state changes
+  </script>
 </head>
 
 <body>
 
   <header>
     <div class="header-inner">
-      <a href="/">
-        <img src="/svg/logo-white.svg" alt="Text and Pixel Logo" class="logo">
-      </a>
+      <a href="/" class="home-logo-link"><img src="/svg/logo-white.svg" alt="Text and Pixel Logo"></a>
       <nav>
-        <a href="/about/">about</a>
-        <a href="/contact/">contact</a>
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+          <img src="/svg/hamburger.svg" alt="Text and Pixel"></a>
+        <div id="myMobileLinks">
+          <span class="selected">about</span>
+          <a href="/contact/">contact</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -154,7 +177,7 @@
           </div>
           <div class="grid-item form-email">
             <form>
-              <input name="subject" value="BC Government Design System - contact form" class="hidden">
+              <input name="subject" value="BC Government Design System - contact form" class="invisible">
               <input type="text" id="email" name="email">
             </form>
             <a class="blue-button" href="">Send</a>

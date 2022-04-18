@@ -14,24 +14,17 @@
   margin: 0;
   line-height: 6.8rem;
 }
-#contact-form .form #columns {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 40px;
-}
 #contact-form .form label {
   font-size: 2rem;
 }
 #contact-form .form .message {
   width: 100%;
-  max-width: 530px;
   font-size: 2rem;
   color: #fff;
   background: transparent;
 }
 #contact-form .form input, #contact-form .form textarea {
   width: 100%;
-  max-width: 530px;
   font-size: 3.5rem;
   color: #fff;
   background: transparent;
@@ -42,17 +35,10 @@
   padding-top: 10px;
   padding-bottom: 27px;
 }
-#contact-form .form input:nth-child(2), #contact-form .form input:nth-child(4), #contact-form .form input:nth-child(6) {
-  margin-left: 10%;
-}
-#contact-form .form input:nth-child(3), #contact-form .form input:nth-child(4) {
+#contact-form .form input[name="eaddress"] {
   border-bottom: 10px solid #00CB00;
 }
-#contact-form .form input:nth-child(5), #contact-form .form input:nth-child(6) {
-  border-bottom: 10px solid #fff;
-}
-#contact-form .form input:nth-child(7), #contact-form .form textarea {
-  width: 95%;
+#contact-form .form textarea {
   border-bottom: 10px solid #C4C4C4;
 }
 #contact-form .form button {
@@ -65,17 +51,12 @@
   padding: 0;
   cursor: pointer;
 }
-#contact-form .hidden {
+#contact-form .invisible {
   display: none;
 }
 @media only screen and (max-width: 1440px) {
   #contact-form .form {
     padding: 0 100px;
-  }
-}
-@media only screen and (max-width: 1350px) {
-  #contact-form .form input:nth-child(2), #contact-form .form input:nth-child(4), #contact-form .form input:nth-child(6) {
-    margin-left: 50px;
   }
 }
 @media only screen and (max-width: 1270px) {
@@ -101,13 +82,10 @@
   #contact-form .form input, #contact-form .form textarea {
     border-bottom: 5px solid #FF20A4;
   }
-  #contact-form .form input:nth-child(3), #contact-form .form input:nth-child(4) {
+  #contact-form .form input[name="eaddress"] {
     border-bottom: 5px solid #00CB00;
   }
-  #contact-form .form input:nth-child(5), #contact-form .form input:nth-child(6) {
-    border-bottom: 5px solid #fff;
-  }
-  #contact-form .form input:nth-child(7), #contact-form .form textarea {
+  #contact-form .form textarea {
     border-bottom: 5px solid #C4C4C4;
   }
 }
@@ -123,13 +101,9 @@
     margin-bottom: 70px;
     padding-bottom: 25px;
   }
-
 }
 @media only screen and (max-width: 470px) {
   #contact-form .form input, #contact-form .form textarea {
     font-size: 3rem;
   }
-}
-@media only screen and (max-width: 370px) {
-
 }

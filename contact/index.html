@@ -59,35 +59,19 @@
         <form
           action="https://formspree.io/f/xjvlenkk"
           method="POST">
-          <input name="subject" value="Contact form" class="hidden">
+          <input name="subject" value="Contact form" class="invisible">
           <div id="columns">
             <div class="field">
-              <label for="fname">First Name*</label>
+              <label for="fname">Name</label>
               <input type="text" onfocus="this.value=''" id="fname" name="fname" required>
             </div>
             <div class="field">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname">
-            </div>
-            <div class="field">
-              <label for="eaddress">Email Address*</label>
+              <label for="eaddress">Email</label>
               <input type="text" id="eaddress" name="eaddress" required>
             </div>
             <div class="field">
-              <label for="organization">Organization</label>
-              <input type="text" id="organization" name="organization">
-            </div>
-            <div class="field">
-              <label for="role">Role</label>
-              <input type="text" id="role" name="role">
-            </div>
-            <div class="field">
-              <label for="country">Country</label>
-              <input type="text" id="country" name="country">
-            </div>
-            <div class="field">
-              <label class="message" for="tellusarea">Tell us about your project</label>
-              <textarea name="tellusarea" id="tellusarea" form="usrform"></textarea>
+              <label class="message" for="tellusarea">Message</label>
+              <textarea name="tellusarea" id="tellusarea" form="usrform" required></textarea>
             </div>
           </div>
           <button type="submit" value="Submit">Send</button>

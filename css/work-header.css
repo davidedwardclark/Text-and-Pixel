@@ -6,20 +6,23 @@ header {
   max-width: 1600px;
   height: 160px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 91px;
 }
 .logo, .home-logo-link {
+  display: block;
   position: relative;
-  height: 60px;
+  width: 400px;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 10px;
 }
 .home-logo-link img {
+  display: block;
   width: 400px;
 }
 nav {
   float: right;
-  margin-top: 92px;
+  margin-top: 25px;
 }
 nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;
@@ -32,18 +35,55 @@ nav span:first-child, nav a:first-child {
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
-
-/* Tablet size */
-@media screen and (max-width: 1024px) {
+nav .hamburger {display: none;}
+@media only screen and (max-width: 897px) {
   .header-inner {
-    padding: 0 80px;
+    padding: 0 71px;
+  }
+  .home-logo-link {
+    width: 100px;
+  }
+  .home-logo-link img {
+    display: none;
+  }
+  .home-logo-link:before {
+    content: "\0020 ";
+    display: block;
+    width: 100px;
+    height: 68px;
+    background-size: cover;
+    background-image: url('/svg/logo-white.svg');
   }
 }
-
-/* Mobile size */
-
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 577px) {
+  header {
+    height: 226px;
+  }
   .header-inner {
-    padding: 0 20px;
+    padding: 0 10%;
+  }
+  nav .hamburger {
+    display: block;
+    width: 58px;
+    margin-top: -60px;
+    margin-right: 0px !important;
+  }
+  nav #myMobileLinks {
+    width: 100% !important;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    padding: 20px 10% 20px 0;
+    display: none;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 577px) {
+  nav .hamburger {
+    display: none;
+  }
+  nav #myMobileLinks {
+    display: block;
   }
 }
