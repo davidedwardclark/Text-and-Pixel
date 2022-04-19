@@ -1,5 +1,5 @@
 /* ----------------------------
-Global 
+Global
 ---------------------------- */
 
 html {
@@ -53,6 +53,7 @@ h2 {
   bottom: -60px;
   right: 0;
   border: 0;
+  cursor: pointer;
 }
 
 .invisible {
@@ -97,82 +98,82 @@ h2 {
 /* END Global */
 
 /* ----------------------------
-  Title 
+  Title
   ---------------------------- */
-  
+
   .title-section-container .fas {
     color: #FFE927;
     font-size: 6rem;
     padding: 0 55px 20px 0;
   }
-  
+
   .title-section {
     display: grid;
     grid-template-columns: 60% 1fr;
     position: relative;
   }
-  
+
   .masthead {
     position: absolute;
     right: 0;
   }
-  
+
   .type {
     padding-right: 40px;
     float: left;
   }
-  
+
   .date {
     float: right;
   }
-  
+
   .type, .date {
     border-left: .01em solid white;
   }
-  
+
   .type ul, .date ul {
     list-style-type: none;
     font-size: 1.8rem;
     font-weight: 400;
     width: 220px;
-    margin: 0; 
+    margin: 0;
     padding-left: 20px;
   }
-  
+
   @media screen and (max-width: 1480px) {
-  
+
     .title-section {
       grid-template-columns: 1fr;
     }
-  
+
     .masthead {
       position: relative;
       padding-top: 100px;
     }
-  
+
     .date {
       float: none;
       display: inline-block;
     }
-  
+
   }
-  
+
   @media screen and (max-width: 1024px) {
-  
+
     .title-section-container .fas {
       font-size: 5rem;
       padding: 0 45px 20px 0;
     }
-  
+
   }
-  
+
   @media screen and (max-width: 768px) {
-  
+
     .title-section-container .fas {
       font-size: 4rem;
       padding: 0 35px 20px 0;
     }
-  
+
     .type {
       display: block;
       padding-right: 0;
@@ -183,18 +184,18 @@ h2 {
     .type ul {
       padding-left: 0;
     }
-  
+
     .date {
       display: block;
       border-left: none;
     }
-  
+
     .date ul {
       padding-left: 0;
     }
-  
+
   }
-  
+
   /* END Title */
 
 /* --------------
@@ -307,7 +308,7 @@ Section 1
 /* END Section 1 */
 
 /* ----------------------------
-Section 2 
+Section 2
 ---------------------------- */
 
 .section-2-grid {
@@ -360,7 +361,7 @@ Section 2
 /* END Section 2 */
 
 /* ----------------------------
-Testimonials 
+Testimonials
 ---------------------------- */
 
 .testimonial {
@@ -418,7 +419,7 @@ blockquote {
 /* END Testimonials */
 
 /* ----------------------------
-Section 3 
+Section 3
 ---------------------------- */
 
 .section-3-grid-1 {
@@ -472,7 +473,7 @@ Section 3
 
   .section-3-grid-1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas: 
+    grid-template-areas:
       "text text"
       "arrow walking";
   }
@@ -500,7 +501,7 @@ Hello section
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-areas: 
+  grid-template-areas:
     ". txt"
     "hello email";
   column-gap: 100px;
@@ -561,7 +562,7 @@ form {
 
   .form-grid {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "hello"
       "txt"
       "email";
