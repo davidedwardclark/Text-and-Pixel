@@ -23,7 +23,7 @@ header {
 }
 nav {
   float: right;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;
@@ -62,6 +62,9 @@ nav .hamburger {display: none;}
   }
   .header-inner {
     padding: 0 10%;
+  }
+  nav {
+    margin-top: 25px;
   }
   nav .hamburger {
     display: block;

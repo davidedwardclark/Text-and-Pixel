@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/css/work-header.css">
   <link rel="stylesheet" href="/css/work-footer.css">
   <link rel="stylesheet" href="/css/work-hamis.css">
+  <script src="https://kit.fontawesome.com/7d674f4e87.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -147,11 +148,14 @@
             <h3 class="hello">Hello</h3>
           </div>
           <div class="grid-item form-email">
-            <form>
+            <form
+              action="https://formspree.io/f/xyyodrew"
+              method="POST"
+            >
               <input name="subject" value="HAMIS - contact form" class="invisible">
-              <input type="text" id="email" name="email">
+              <input type="text" id="email" name="email" required>
+              <button type="submit" value="Submit" class="blue-button">Send</button>
             </form>
-            <a class="blue-button" href="">Send</a>
           </div>
         </div>
       </div>
