@@ -14,25 +14,23 @@
   <link rel="stylesheet" href="/css/work-header.css">
   <link rel="stylesheet" href="/css/work-footer.css">
   <link rel="stylesheet" href="/css/work-hamis.css">
-  <script src="https://kit.fontawesome.com/7d674f4e87.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
   <header>
     <div class="header-inner">
-      <a href="/">
-        <img src="/svg/logo-white.svg" alt="Text and Pixel Logo" class="logo">
-      </a>
+      <a href="/" class="home-logo-link"><img src="/svg/logo-white.svg" alt="Text and Pixel Logo"></a>
       <nav>
-        <a href="/about/">about</a>
-        <a href="/contact/">contact</a>
+        <a href="#" class="hamburger">
+          <img src="/svg/hamburger.svg" alt="Navigation Button">
+        </a>
+        <div id="myMobileLinks">
+          <a href="/about/">about</a>
+          <a href="/contact/">contact</a>
+        </div>
       </nav>
     </div>
   </header>
-
   <main>
-
     <section class="title-section-container section-container">
       <div class="title-section">
         <div class="title">
@@ -59,10 +57,9 @@
         </div>
       </div>
     </section>
-
     <section class="section-1 section-container">
       <div class="section-1-grid">
-        <div class="section-1-images">  
+        <div class="section-1-images">
           <img src="images/img-hamis-1.svg">
         </div>
         <div class="section-1-copy-wrapper">
@@ -72,18 +69,17 @@
             <img src="images/img-hamis-1-2.svg">
             <p>Originally designed in the early 2000's it had aged poorly, and was difficult to navigate.</p>
             <img src="images/img-hamis-1-3.svg">
-            <p>I worked with a team at the Ministry of Health in the redesign. Our goal was to improve the look and feel, increase usability, and rewrite the application code. The database remained unchanged.</p>
+            <p>We worked with a team at the Ministry of Health in the redesign. Our goal was to improve the look and feel, increase usability, and rewrite the application code. The database remained unchanged.</p>
           </div>
         </div>
       </div>
     </section>
-
     <section class="section-2 section-container">
       <div class="section-2-grid">
         <div class="section-2-grid-item">
           <p class="section-2-num">1</p>
           <div class="section-2-copy">
-            <p>I started off by getting to know the client and creating a high level map of the existing application. This stage involved some cleanup and we ended up with a leaner site structure.</p>
+            <p>We started off by getting to know the client and creating a high level map of the existing application. This stage involved some cleanup and we ended up with a leaner site structure.</p>
             <img src="images/img-hamis-2-1.svg">
           </div>
         </div>
@@ -96,11 +92,10 @@
         </div>
       </div>
     </section>
-
     <section id="testimonial" class="testimonial-container">
       <div class="section-container">
-        <div class="testimonial">  
-          <blockquote>“David used his knowledge and expertise to provide us with great advice, insights, and suggestions. This was a major redesign and David delivered on all fronts, it was great working with him.”</blockquote>
+        <div class="testimonial">
+          <blockquote>“David (Founder, Text &amp; Pixel) used his knowledge and expertise to provide us with great advice, insights, and suggestions. This was a major redesign and David delivered on all fronts, it was great working with him.”</blockquote>
           <img src="images/testimonial.svg" class="testimonial-img">
           <div class="testimonial-name">
             <p><strong>Bart Jedynak</strong>, Team Lead, HAMIS</p>
@@ -109,13 +104,12 @@
         </div>
       </div>
     </section>
-
     <section class="section-2 section-container">
       <div class="section-2-grid">
         <div class="section-2-grid-item">
           <p class="section-2-num">3</p>
           <div class="section-2-copy">
-            <p>Design sessions started at a whiteboard with the client. I love presenting ideas directly, getting immediate feedback, and iterating. The best solutions come out of collaboration.</p>
+            <p>Design sessions started at a whiteboard with the client. We love presenting ideas directly, getting immediate feedback, and iterating. The best solutions come out of collaboration.</p>
             <img src="images/img-hamis-2-3.svg">
           </div>
         </div>
@@ -128,10 +122,9 @@
         </div>
       </div>
     </section>
-
     <section id="testimonial" class="testimonial-container">
       <div class="section-container">
-        <div class="testimonial">  
+        <div class="testimonial">
           <blockquote>“David’s commitment to usability permeates his design work.”</blockquote>
           <img src="images/testimonial.svg" class="testimonial-img">
           <div class="testimonial-name">
@@ -141,52 +134,45 @@
         </div>
       </div>
     </section>
-
     <section id="contact-form" class="contact-form-container">
       <div class="section-container">
         <div class="contact-form form-grid">
           <div class="grid-item">
           </div>
           <div class="grid-item form-txt">
-            <p>We are always interested in new projects.</p> 
-            <p>Enter you email, hit send and we will be in touch soon for a chat.</p>
+            <p>We are always interested in new projects.</p>
+            <p>Enter your email, hit send and we will be in touch soon for a chat.</p>
           </div>
           <div class="grid-item form-hello">
             <h3 class="hello">Hello</h3>
           </div>
           <div class="grid-item form-email">
             <form>
+              <input name="subject" value="HAMIS - contact form" class="invisible">
               <input type="text" id="email" name="email">
-              <i></i>
             </form>
             <a class="blue-button" href="">Send</a>
           </div>
         </div>
       </div>
     </section>
-
   </main>
-
   <footer>
     <div class="footer-inner">
       <div class="social-media">
-        <a href="https://www.instagram.com/textandpixel/">instagram</a>
         <a href="https://twitter.com/textandpixel/">twitter</a>
-        <a href="https://www.facebook.com/textandpixel/">facebook</a>
         <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
       </div>
       <div class="contact">
         <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
         <a href="tel:12506343779">(250) 634-3779</a>
       </div>
-      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time>2021</time></span>
+      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time></time></span>
     </div>
   </footer>
-  
-  <script>
-    const currentYear = new Date().getFullYear();
-    const yearContainer = document.querySelector('time');
-    yearContainer.innerHTML = currentYear;
-  </script>
-  
+  <script src="/js/date.js"></script>
+  <script src="/js/hamburger.js"></script>
+</body>
 </html>

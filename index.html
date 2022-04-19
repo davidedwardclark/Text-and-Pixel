@@ -16,36 +16,15 @@
   <link rel="stylesheet" href="/css/home-casestudies.css">
   <link rel="stylesheet" href="/css/home-nextsteps.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-    function myFunction() {
-      var x = document.getElementById("myMobileLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    function myFunctionScreen(y) {
-      var x = document.getElementById("myMobileLinks");
-      if (y.matches && x.style.display === "none") { // If media query matches
-        x.style.display = "block";
-      } else {
-      }
-    }
-
-    var y = window.matchMedia("(min-width: 577px)")
-    myFunctionScreen(y) // Call listener function at run time
-    y.addListener(myFunctionScreen) // Attach listener function on state changes
-  </script>
 </head>
 <body>
   <header>
     <div class="header-inner">
       <a href="#" class="home-logo-link"><img src="/svg/logo.svg" alt="Text and Pixel Logo"></a>
       <nav>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-          <img src="svg/hamburger.svg" alt="Text and Pixel"></a>
+        <a href="#" class="hamburger">
+          <img src="/svg/hamburger.svg" alt="Navigation Button">
+        </a>
         <div id="myMobileLinks">
           <a href="/about/">about</a>
           <a href="/contact/">contact</a>
@@ -55,15 +34,15 @@
   </header>
   <main>
     <section id="home-masthead">
-      <div id="pinky"><img src="/svg/pink-strip.svg" alt="pink strip" class="pink-strip"></div>
       <div class="headline">
         <h1>A design studio specializing in collaborative problem solving.</h1>
         <img src="/images/img-case-studies.png" alt="Case Studies Graphic" class="case-studies">
       </div>
+      <div id="pinky"><img src="/svg/pink-strip.svg" alt="pink strip" class="pink-strip"></div>
       <div class="reviews-back">
         <div class="reviews-content">
           <h2>Health Sector Performance Portal</h2>
-          <p>Here is a brief description about how high octane this is and why we kick ass.</p>
+          <p>The foundation of the design was laid with high energy white boarding sessions.</p>
           <img src="/images/img-case-study-reviewer.png" alt="Image of Reviewer">
           <blockquote>
             “David was instrumental in creating an efficient design for HSPP. He was fully engaged when it mattered and always eager to add value. He drove us to streamline UX, coached the team on usability testing, and contributed to team communictions and overall effectiveness. HSPP is a better product because of his passion and hard work.”
@@ -76,19 +55,19 @@
       <div class="cases">
         <img src="/images/img-bc-government.png" alt="BC Government Image">
         <h2>BC Government Design System</h2>
-        <p>Here is a brief description of what this project is about.</p>
+        <p>See how we collaborated with the BC Government on their design system.</p>
         <a href="/work/bcgds/">Read More</a>
       </div>
       <div class="cases">
         <img src="/images/img-hamis.png" alt="HAMIS Image">
         <h2>HAMIS</h2>
-        <p>Here is a brief description of what this project is about.</p>
+        <p>Get an overview of our agile process used to integrate health systems.</p>
         <a href="/work/hamis/">Read More</a>
       </div>
     </section>
     <section id="home-nextsteps">
       <img src="/images/img-fire-pixel.png" alt="Fire Pixel">
-      <h2>We work for our clients’ goals ensuring each step we take is heading in the right direction.</h2>
+      <h2>We are with you every step. We'll make sure the right decisions are made for your brand.</h2>
       <div class="flinks">
         <a href="/contact/">Let’s connect!</a>
         <a href="/about/">Find out more</a>
@@ -98,22 +77,19 @@
   <footer>
     <div class="footer-inner">
       <div class="social-media">
-        <a href="https://www.instagram.com/textandpixel/">instagram</a>
         <a href="https://twitter.com/textandpixel/">twitter</a>
-        <a href="https://www.facebook.com/textandpixel/">facebook</a>
         <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
       </div>
       <div class="contact">
         <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
         <a href="tel:12506343779">(250) 634-3779</a>
       </div>
-      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time>2021</time></span>
+      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time></time></span>
     </div>
   </footer>
-  <script>
-    const currentYear = new Date().getFullYear();
-    const yearContainer = document.querySelector('time');
-    yearContainer.innerHTML = currentYear;
-  </script>
+  <script src="/js/date.js"></script>
+  <script src="/js/hamburger.js"></script>
 </body>
 </html>

@@ -15,23 +15,22 @@
   <link rel="stylesheet" href="/css/work-footer.css">
   <link rel="stylesheet" href="/css/work-bcgds.css">
 </head>
-
 <body>
-
   <header>
     <div class="header-inner">
-      <a href="/">
-        <img src="/svg/logo-white.svg" alt="Text and Pixel Logo" class="logo">
-      </a>
+      <a href="/" class="home-logo-link"><img src="/svg/logo-white.svg" alt="Text and Pixel Logo"></a>
       <nav>
-        <a href="/about/">about</a>
-        <a href="/contact/">contact</a>
+        <a href="#" class="hamburger">
+          <img src="/svg/hamburger.svg" alt="Navigation Button">
+        </a>
+        <div id="myMobileLinks">
+          <a href="/about/">about</a>
+          <a href="/contact/">contact</a>
+        </div>
       </nav>
     </div>
   </header>
-
   <main>
-
     <section class="title-section-container section-container">
       <div class="icons">
         <i class="fas fa-chart-bar"></i>
@@ -63,18 +62,16 @@
         </div>
       </div>
     </section>
-
     <section class="section-1 section-container">
       <div class="section-1-grid">
         <div class="section-1-copy">
           <p>From January 2019 to the Summer of 2021 five web applications were redesigned for the Ministry of Health. In order to achieve a visually consistent experience the BC Government Design System was used. The need arose for components not currently in the system which led the team to reach out to the system maintainers at the Government Digital Experience Division (GDX). We ended up collaborating and adding new components together. We also made a graphics file containing all design system components so that they could be quickly and easily used on new projects.</p>
         </div>
-        <div class="section-1-img">  
+        <div class="section-1-img">
           <img src="images/img-bcgds-1.svg">
         </div>
       </div>
     </section>
-
     <section class="section-2 section-container">
       <div class="section-grid">
         <div class="section-copy">
@@ -82,12 +79,11 @@
           <p><strong>TYPOGRAPHY</strong></p>
           <p>GDX chose BC Sans as the standard typeface for all BC Government websites. This happened mid-project so we promptly switched over to it and updated the styleguide.</p>
         </div>
-        <div class="section-img">  
+        <div class="section-img">
           <img src="images/img-bcgds-2-2.svg">
         </div>
       </div>
     </section>
-
     <section class="section-3 section-container">
       <div class="section-grid">
         <div class="section-copy">
@@ -95,16 +91,15 @@
           <p><strong>GRID</strong></p>
           <p>At project start the design system didn’t have a standard grid so we established one and added to the styleguide.</p>
         </div>
-        <div class="section-img">  
+        <div class="section-img">
           <img src="images/img-bcgds-3-2.svg">
         </div>
       </div>
     </section>
-
     <section id="testimonial" class="testimonial-container">
       <div class="section-container">
-        <div class="testimonial">  
-          <blockquote>“David has been a tremendous advocate and champion for the Design System in the BC Government. He has consistently provided advice, recommendations, and improvements to the product while helping to facilitate a close community of UX designers in the public service. He’s been a wonderful designer to work with and a thoughtful contributor to the community.”</blockquote>
+        <div class="testimonial">
+          <blockquote>“David (Founder of Text and Pixel) has been a tremendous advocate and champion for the Design System in the BC Government. He has consistently provided advice, recommendations, and improvements to the product while helping to facilitate a close community of UX designers in the public service. He’s been a wonderful designer to work with and a thoughtful contributor to the community.”</blockquote>
           <img src="images/testimonial.png" class="testimonial-img">
           <div class="testimonial-name">
             <p><strong>Davis Levine</strong>, Team Lead</p>
@@ -113,7 +108,6 @@
         </div>
       </div>
     </section>
-
     <section class="section-3 section-container">
       <div class="section-grid">
         <div class="section-copy">
@@ -121,12 +115,11 @@
           <p><strong>COLOUR</strong></p>
           <p>Standard colours were used throughout all web applications designed for the Ministry of Health.</p>
         </div>
-        <div class="section-img">  
+        <div class="section-img">
           <img src="images/img-bcgds-4-2.svg">
         </div>
       </div>
     </section>
-
     <section class="section-4 section-container">
       <div class="section-grid">
         <div class="section-copy">
@@ -134,58 +127,50 @@
           <p><strong>ICONS</strong></p>
           <p>Font Awesome is the standard icon set for the BC Government Design System. Commonly used icons are kept in the styleguide for quick access.</p>
         </div>
-        <div class="section-img">  
+        <div class="section-img">
           <img src="images/img-bcgds-5-2.svg">
         </div>
       </div>
     </section>
-
     <section id="contact-form" class="contact-form-container">
       <div class="section-container">
         <div class="contact-form form-grid">
           <div class="grid-item">
           </div>
           <div class="grid-item form-txt">
-            <p>We are always interested in new projects.</p> 
-            <p>Enter you email, hit send and we will be in touch soon for a chat.</p>
+            <p>We are always interested in new projects.</p>
+            <p>Enter your email, hit send and we will be in touch soon for a chat.</p>
           </div>
           <div class="grid-item form-hello">
             <h3 class="hello">Hello</h3>
           </div>
           <div class="grid-item form-email">
             <form>
+              <input name="subject" value="BC Government Design System - contact form" class="invisible">
               <input type="text" id="email" name="email">
-              <i></i>
             </form>
             <a class="blue-button" href="">Send</a>
           </div>
         </div>
       </div>
     </section>
-
   </main>
-
   <footer>
     <div class="footer-inner">
       <div class="social-media">
-        <a href="https://www.instagram.com/textandpixel/">instagram</a>
         <a href="https://twitter.com/textandpixel/">twitter</a>
-        <a href="https://www.facebook.com/textandpixel/">facebook</a>
         <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
       </div>
       <div class="contact">
         <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
         <a href="tel:12506343779">(250) 634-3779</a>
       </div>
-      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time>2021</time></span>
+      <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time></time></span>
     </div>
   </footer>
-
-  <script>
-    const currentYear = new Date().getFullYear();
-    const yearContainer = document.querySelector('time');
-    yearContainer.innerHTML = currentYear;
-  </script>
-
+  <script src="/js/date.js"></script>
+  <script src="/js/hamburger.js"></script>
 </body>
 </html>

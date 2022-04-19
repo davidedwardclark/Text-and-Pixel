@@ -76,4 +76,7 @@
   #home-casestudies .cases {
     padding: 120px 30px 120px 30px;
   }
+  #home-casestudies .cases img {
+    max-width: 80%;
+  }
 }

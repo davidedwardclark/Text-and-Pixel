@@ -16,36 +16,15 @@
   <link rel="stylesheet" href="/css/about-process.css">
   <link rel="stylesheet" href="/css/about-team.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-    function myFunction() {
-      var x = document.getElementById("myMobileLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    function myFunctionScreen(y) {
-      var x = document.getElementById("myMobileLinks");
-      if (y.matches && x.style.display === "none") { // If media query matches
-        x.style.display = "block";
-      } else {
-      }
-    }
-
-    var y = window.matchMedia("(min-width: 577px)")
-    myFunctionScreen(y) // Call listener function at run time
-    y.addListener(myFunctionScreen) // Attach listener function on state changes
-  </script>
 </head>
 <body>
   <header>
     <div class="header-inner">
       <a href="/" class="home-logo-link"><img src="/svg/logo.svg" alt="Text and Pixel Logo"></a>
       <nav>
-        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
-          <img src="/svg/hamburger.svg" alt="Text and Pixel"></a>
+        <a href="#" class="hamburger">
+          <img src="/svg/hamburger.svg" alt="Navigation Button">
+        </a>
         <div id="myMobileLinks">
           <span class="selected">about</span>
           <a href="/contact/">contact</a>
@@ -56,23 +35,21 @@
   <main>
     <section id="about-values">
       <div class="values">
-      <h1>Our values are simple and run throughout our work:</h1>
+      <h1>Our Values</h1>
       <img src="/svg/collaboration.svg" alt="co-design/collaboration icon">
-      <h2>co-design/collaboration</h2>
-      <p>We bring our high octane to every project but can only do so when we have you
-on board, no sense leaving the runway without any passangers...</p>
+      <h2>Co-design &amp; Collaboration</h2>
+      <p>We are there working with you every step of the way. We prioritize close collaboration with our clients through co-design sessions.</p>
       <img src="/svg/interface.svg" alt="interface first icon">
-      <h2>interface first</h2>
-      <p>interface first means we plan, design and work back from the desired experience
-of your clients, customers ...</p>
+      <h2>Interface First</h2>
+      <p>We design from the interface and move backwards. We try not not let technology decisions effect the user experience.</p>
       <img src="/svg/one-medium.svg" alt="one medium icon">
-      <h2>one medium</h2>
-      <p>We are all web all the time.</p>
+      <h2>One Medium</h2>
+      <p>We specalise in one medium: the web.</p>
       </div>
     </section>
     <section id="about-process">
       <div class="process">
-      <h3>We work from our clients desired end result ensuring each step we take is heading in the right direction.</h3>
+      <h3>Our Process</h3>
       <img src="/images/img-process-graphic.png" alt="Process Graphic" class="process-width">
       <img src="/images/img-process-graphic-long.png" alt="Process Graphic" class="process-long">
       </div>
@@ -83,17 +60,17 @@ of your clients, customers ...</p>
         <div class="profile">
           <img src="/images/img-owner-david-clark.jpg" alt="Owner David Clark">
           <h2>David Clark</h2>
-          <p>These are some things that you might find interesting about this person</p>
+          <p>Founder. Background in front end development and user interface design.</p>
         </div>
         <div class="profile">
           <img src="/images/img-staff-simeon-goa.jpg" alt="Staff Simeon Goa">
           <h2>Simeon Goa</h2>
-          <p>These are some things that you might find interesting about this person</p>
+          <p>Identity designer and illustrator.</p>
         </div>
         <div class="profile">
           <img src="/images/img-staff-kylie-neiser.jpg" alt="Staff Kylie Neiser">
           <h2>Kylie Neiser</h2>
-          <p>These are some things that you might find interesting about this person</p>
+          <p>Accounting and marketing.</p>
         </div>
       </div>
     </section>
@@ -101,10 +78,10 @@ of your clients, customers ...</p>
   <footer>
     <div class="footer-inner">
       <div class="social-media">
-        <a href="https://www.instagram.com/textandpixel/">instagram</a>
         <a href="https://twitter.com/textandpixel/">twitter</a>
-        <a href="https://www.facebook.com/textandpixel/">facebook</a>
         <a href="https://www.linkedin.com/company/text-and-pixel/">linkedin</a>
+        <a href="https://www.instagram.com/textandpixel/">instagram</a>
+        <a href="https://www.facebook.com/textandpixel/">facebook</a>
       </div>
       <div class="contact">
         <a href="mailto:contact@textandpixel.com">contact@textandpixel.com</a>
@@ -113,10 +90,7 @@ of your clients, customers ...</p>
       <span class="copyright">&copy; Copyright Text &amp; Pixel Design Inc. <time></time></span>
     </div>
   </footer>
-  <script>
-    const currentYear = new Date().getFullYear();
-    const yearContainer = document.querySelector('time');
-    yearContainer.innerHTML = currentYear;
-  </script>
+  <script src="/js/date.js"></script>
+  <script src="/js/hamburger.js"></script>
 </body>
 </html>

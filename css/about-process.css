@@ -41,7 +41,7 @@
 }
 @media only screen and (max-width: 750px) {
   #about-process .process h3:before {
-    padding-bottom: 170px;
+    padding-bottom: 60px;
   }
   #about-process .process .process-width {display: none;}
   #about-process .process .process-long {

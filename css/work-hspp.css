@@ -54,6 +54,10 @@ h2 {
   right: 0;
 }
 
+.invisible {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
 
   .section-container {
@@ -90,18 +94,6 @@ h2 {
 }
 
 /* END Global */
-
-/* ----------------------------
-Navigation 
----------------------------- */
-
-@media screen and (max-width: 480px) {
-  nav {
-    display: none;
-  }
-}
-
-/* END Navigation */
 
 /* ----------------------------
   Title 
@@ -530,28 +522,6 @@ Hello section
 form {
 	position: relative;
   height: 80px;
-}
-
-form i {
-	position: absolute;
-	width: 2px;
-	height: 70%;
-	background-color: gray;
-	left: 5px;
-	top: 10%;
-	animation-name: blink;
-	animation-duration: 1400ms;
-	animation-iteration-count: infinite;
-	opacity: 1;
-}
-
-form input:focus + i {
-	display: none;
-}
-
-@keyframes blink {
-	from { opacity: 1; }
-	to { opacity: 0; }
 }
 
 .hello {
