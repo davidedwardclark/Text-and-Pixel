@@ -1,5 +1,5 @@
 /* ----------------------------
-Global 
+Global
 ---------------------------- */
 
 html {
@@ -9,7 +9,7 @@ html {
   background-position: center;
   background-repeat: repeat-y;
 }
-  
+
 body {
   font-size: 1.8rem;
 }
@@ -50,6 +50,7 @@ h2 {
   bottom: -60px;
   right: 0;
   border: 0;
+  cursor: pointer;
 }
 
 .invisible {
@@ -94,7 +95,7 @@ h2 {
 /* END Global */
 
 /* ----------------------------
-Title 
+Title
 ---------------------------- */
 
 .title-section-container .fas {
@@ -113,7 +114,7 @@ Title
   position: absolute;
   right: 0;
 }
-  
+
 .type {
   padding-right: 40px;
   float: left;
@@ -132,7 +133,7 @@ Title
   font-size: 1.8rem;
   font-weight: 400;
   width: 220px;
-  margin: 0; 
+  margin: 0;
   padding-left: 20px;
 }
 
@@ -244,9 +245,9 @@ Sections
 }
 
 /* END Sections */
-  
+
 /* ----------------------------
-Testimonials 
+Testimonials
 ---------------------------- */
 
 .testimonial {
@@ -314,7 +315,7 @@ Hello section
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-areas: 
+  grid-template-areas:
     ". txt"
     "hello email";
   column-gap: 100px;
@@ -377,7 +378,7 @@ form {
 
   .form-grid {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "hello"
       "txt"
       "email";
@@ -386,7 +387,7 @@ form {
   .form-hello {
     margin-bottom: 40px;
   }
-  
+
 }
 
 /* END Sections */

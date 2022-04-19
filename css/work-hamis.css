@@ -1,5 +1,5 @@
 /* ----------------------------
-Global 
+Global
 ---------------------------- */
 
 html {
@@ -9,24 +9,24 @@ html {
   background-position: center;
   background-repeat: repeat-y;
 }
-  
+
 body {
   font-size: 1.8rem;
 }
-  
+
 h1 {
   font-size: 5rem;
   line-height: 5rem;
   margin: 0;
   font-family: "ProximaSoft-Bold", helvetica, arial, sans-serif;
 }
-  
+
 h2 {
   font-size: 3.2rem;
   line-height: 3.2rem;
   font-weight: 400;
 }
-  
+
 .section-container {
   max-width: 1600px;
   margin: 300px auto;
@@ -45,6 +45,7 @@ h2 {
   bottom: -60px;
   right: 0;
   border: 0;
+  cursor: pointer;
 }
 
 
@@ -86,13 +87,13 @@ h2 {
   }
 
 }
-  
+
 /* END Global */
 
 /* ----------------------------
-Title 
+Title
 ---------------------------- */
-  
+
 .title-section-container .fas {
   color: #FFE927;
   font-size: 6rem;
@@ -128,7 +129,7 @@ Title
   font-size: 1.8rem;
   font-weight: 400;
   width: 220px;
-  margin: 0; 
+  margin: 0;
   padding-left: 20px;
 }
 
@@ -187,13 +188,13 @@ Title
   }
 
 }
-  
+
 /* END Title */
 
 /* --------------
 Section 1
 -------------- */
-  
+
 .section-1-grid {
   display: grid;
   position: relative;
@@ -245,7 +246,7 @@ Section 1
   padding-bottom: 20px;
   padding-left: 30px;
 }
-  
+
 .section-1 p {
   position: relative;
   margin-top: 0;
@@ -288,13 +289,13 @@ Section 1
   }
 
 }
-  
+
 /* END Section 1 */
 
 /* ----------------------------
-Section 2 
+Section 2
 ---------------------------- */
-  
+
 .section-2-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -359,13 +360,13 @@ Section 2
   }
 
 }
-  
+
 /* END Section 2 */
 
 /* ----------------------------
-Testimonials 
+Testimonials
 ---------------------------- */
-  
+
 .testimonial {
   max-width: 920px;
   margin: 0 auto;
@@ -417,13 +418,13 @@ blockquote {
   }
 
 }
-  
+
 /* END Testimonials */
 
 /* ----------------------------
 Hello section
 ---------------------------- */
-  
+
 .contact-form-container {
   background: #004AB8;
 }
@@ -431,7 +432,7 @@ Hello section
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-areas: 
+  grid-template-areas:
     ". txt"
     "hello email";
   column-gap: 100px;
@@ -492,7 +493,7 @@ form {
 
   .form-grid {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "hello"
       "txt"
       "email";
@@ -505,4 +506,3 @@ form {
 }
 
 /* END Hello section */
-  
