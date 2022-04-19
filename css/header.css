@@ -23,7 +23,6 @@ header {
 }
 nav {
   float: right;
-  margin-top: 15px;
 }
 nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;
@@ -36,8 +35,16 @@ nav span:first-child, nav a:first-child {
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
-nav .hamburger {display: none;}
-@media only screen and (max-width: 897px) {
+nav .hamburger {
+  display: none;
+}
+nav .hamburger img {
+  margin-top: 2px;
+}
+nav #myMobileLinks {
+  margin-top: -7px;
+}
+@media only screen and (max-width: 1000px) {
   .header-inner {
     padding: 0 71px;
   }
@@ -51,20 +58,18 @@ nav .hamburger {display: none;}
     content: "\0020 ";
     display: block;
     width: 100px;
-    height: 68px;
+    height: 94px;
+    margin-left: -10px;
     background-size: cover;
     background-image: url('/svg/logo.svg');
   }
 }
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 700px) {
   header {
     height: 226px;
   }
   .header-inner {
     padding: 0 10%;
-  }
-  nav {
-    margin-top: 25px;
   }
   nav .hamburger {
     display: block;
@@ -77,13 +82,16 @@ nav .hamburger {display: none;}
     z-index: 1;
     position: absolute;
     left: 0;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 10% 20px 0;
     display: none;
     text-align: right;
   }
+  nav span:first-child, nav a:first-child {
+    margin-right: 40px;
+  }
 }
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 701px) {
   nav .hamburger {
     display: none;
   }
