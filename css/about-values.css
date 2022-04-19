@@ -68,7 +68,7 @@
 }
 @media only screen and (max-width: 824px) {
   #about-values .values h1:before {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -76,7 +76,7 @@
     padding: 60px 10% 30px 10%;
   }
   #about-values .values h1:before {
-    padding-bottom: 310px;
+    padding-bottom: 110px;
   }
 }
 @media only screen and (max-width: 504px) {

@@ -44,10 +44,16 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
   float: left;
   width: 100%;
   font-size: 1.7rem;
+  line-height: 1.6;
   color: #FFFFFF;
 }
 .grey-background .copyright {
   color: #0066FF;
+}
+@media only screen and (max-width: 720px) {
+  .copyright {
+    margin-top: 85px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .footer-inner {
@@ -60,13 +66,9 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
   }
   .social-media {
     width: 100%;
-    column-count: 2;
     border-bottom: 4px solid #fff;
     padding-bottom: 40px;
     margin-bottom: 40px;
-  }
-  .social-media a {
-    display: inline-table;
   }
   .contact {
     float: none;
@@ -74,6 +76,9 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
     border-bottom: 4px solid #fff;
     padding-bottom: 40px;
     margin-bottom: 40px;
+  }
+  .copyright {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -88,5 +93,13 @@ footer a:link, footer a:visited, footer a:hover, footer a:active {
   }
   .contact a:first-child {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .social-media {
+    column-count: 2;
+  }
+  .social-media a {
+    display: inline-table;
   }
 }
