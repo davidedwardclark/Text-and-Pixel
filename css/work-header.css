@@ -14,6 +14,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   padding-top: 11px;
+  width: 87px;
 }
 .home-logo-link img {
   display: block;
@@ -28,7 +29,7 @@ nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   text-decoration: none;
 }
 nav span:first-child, nav a:first-child {
-  margin-right: 64px;
+  margin-right: 40px;
 }
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
@@ -68,7 +69,7 @@ nav #myMobileLinks {
     z-index: 1;
     position: absolute;
     left: 0;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 10% 20px 0;
     display: none;
     text-align: right;
