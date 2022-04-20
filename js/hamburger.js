@@ -1,6 +1,6 @@
 (function() {
 
-  const screenMinWidth = window.matchMedia("(min-width: 577px)");
+  const screenMinWidth = window.matchMedia("(min-width: 701px)");
   const hamburgerButton = document.getElementsByClassName("hamburger")[0];
 
   hamburgerButton.onclick = function myFunction() {

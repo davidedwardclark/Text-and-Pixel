@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 288 48" style="enable-background:new 0 0 288 48;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" baseProfile="basic" id="Art" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 200 150" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{fill:#0066FF;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#00CA00;}
+	.st3{fill:#FF0097;}
 </style>
-<path class="st0" d="M15.2,0.1H0v15.2h15.2V0.1z"/>
-<path class="st0" d="M30.4,0.1H15.2v15.2h15.2V0.1z"/>
-<path class="st0" d="M30.4,30.5H15.2v15.2h15.2V30.5z"/>
-<path class="st0" d="M30.4,15.3H15.2v15.2h15.2V15.3z"/>
-<path class="st0" d="M60.8,30.5H45.6v15.2h15.2V30.5z"/>
-<path class="st0" d="M45.6,0.1H30.4v15.2h15.2V0.1z"/>
+<polygon class="st1" points="150,25 150,0 125,0 100,0 75,0 50,0 25,0 0,0 0,25 0,50 25,50 50,50 50,75 50,100 50,125 50,150 
+	75,150 100,150 100,125 100,100 100,75 100,50 125,50 150,50 "/>
+<polygon class="st1" points="175,100 150,100 150,125 150,150 175,150 200,150 200,125 200,100 "/>
 </svg>
