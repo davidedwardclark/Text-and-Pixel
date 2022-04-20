@@ -20,6 +20,7 @@ header {
 .home-logo-link img {
   display: block;
   width: 400px;
+  margin-left: -10px;
 }
 nav {
   float: right;
