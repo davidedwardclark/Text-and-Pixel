@@ -47,7 +47,7 @@ h2 {
   font-weight: 700;
   font-size: 2.4rem;
   position: absolute;
-  bottom: -60px;
+  bottom: -80px;
   right: 0;
   border: 0;
   cursor: pointer;
@@ -58,38 +58,30 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-
   .section-container {
     margin: 150px auto;
     padding: 0 80px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .section-container {
     padding: 0 60px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   h1 {
     font-size: 3.8rem;
     line-height: 3.8rem;
   }
-
   h2 {
     font-size: 2rem;
   }
-
   .section-container {
     margin: 80px auto;
     padding: 0 20px;
   }
-
 }
 
 /* END Global */
@@ -138,59 +130,47 @@ Title
 }
 
 @media screen and (max-width: 1480px) {
-
   .title-section {
     grid-template-columns: 1fr;
   }
-
   .masthead {
     position: relative;
     padding-top: 100px;
   }
-
   .date {
     float: none;
     display: inline-block;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
-
   .title-section-container .fas {
     font-size: 5rem;
     padding: 0 45px 20px 0;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .title-section-container .fas {
     font-size: 4rem;
     padding: 0 35px 20px 0;
   }
-
   .type {
     display: block;
     padding-right: 0;
     padding-bottom: 20px;
     border-left: none;
   }
-
   .type ul {
     padding-left: 0;
   }
-
   .date {
     display: block;
     border-left: none;
   }
-
   .date ul {
     padding-left: 0;
   }
-
 }
 
 /* END Title */
@@ -225,6 +205,8 @@ Sections
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-1-img img {
@@ -232,16 +214,13 @@ Sections
 }
 
 @media screen and (max-width: 1024px) {
-
   .section-container .section-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
-
   .section-1-grid {
     grid-template-columns: 1fr;
   }
-
 }
 
 /* END Sections */
@@ -322,7 +301,7 @@ Hello section
 }
 
 .contact-form {
-  padding: 100px 0;
+  padding: 60px 0 180px 0;
 }
 
 .contact-form .grid-item {
@@ -336,16 +315,14 @@ Hello section
 }
 
 form {
-    position: relative;
+	position: relative;
   height: 80px;
 }
 
 .hello {
-  border-bottom: 10px solid #FC1579;
   font-size: 6.4rem;
   font-weight: 700;
   margin: 0;
-  height: 80px;
 }
 
 .contact-form form input, .contact-form form textarea {
@@ -354,13 +331,14 @@ form {
   color: #fff;
   background: transparent;
   border: none;
-  border-bottom: 10px solid #0062F4;
+
   margin-right: 10px;
   padding-bottom: 27px;
 }
 
 .form-hello {
   grid-area: hello;
+  border-bottom: 15px solid #FC1579;
 }
 
 .form-txt {
@@ -369,13 +347,10 @@ form {
 
 .form-email {
   grid-area: email;
-  margin-bottom: 40px;
+  border-bottom: 15px solid #0062F4;
 }
 
-/* END Hello section */
-
 @media screen and (max-width: 768px) {
-
   .form-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -383,11 +358,12 @@ form {
       "txt"
       "email";
   }
-
   .form-hello {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
-
+  .form-txt {
+    padding-top: 40px;
+  }
 }
 
-/* END Sections */
+/* END Hello section */
