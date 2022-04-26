@@ -1,10 +1,9 @@
 (function() {
 
-  const screenMinWidth = window.matchMedia("(min-width: 701px)");
   const hamburgerButton = document.getElementsByClassName("hamburger")[0];
 
   hamburgerButton.onclick = function myFunction() {
-    let mobileLinks = document.getElementById('myMobileLinks');
+    let mobileLinks = document.getElementById('links');
     if (mobileLinks.style.display === 'block') {
       mobileLinks.style.display = 'none';
     } else {
@@ -13,7 +12,7 @@
   }
 
   function myFunctionScreen(screenMinWidth) {
-    let mobileLinks = document.getElementById('myMobileLinks');
+    let mobileLinks = document.getElementById('links');
     if (screenMinWidth.matches && mobileLinks.style.display === 'none') {
       mobileLinks.style.display = 'block';
     }

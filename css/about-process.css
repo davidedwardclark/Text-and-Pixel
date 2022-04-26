@@ -1,6 +1,6 @@
 #about-process .process {
   width: 100%;
-  max-width: 1450px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 50px 33px 30px 33px;
 }
@@ -9,7 +9,7 @@
 }
 #about-process .process .process-width {display: block;}
 #about-process .process .process-long {display: none;}
-#about-process .process h3 {
+#about-process .process h2 {
   color: #0166FF;
   margin: 0 0 100px 40px;
   font-size: 3.9rem;
@@ -18,7 +18,7 @@
   max-width: 800px;
   line-height: 3.8rem;
 }
-#about-process .process h3:before {
+#about-process .process h2:before {
   font-family: arial;
   content: "\25A0 ";
   font-size: 9rem;
@@ -28,19 +28,19 @@
   align-items: center;
 }
 @media only screen and (max-width: 860px) {
-  #about-process .process h3 {
+  #about-process .process h2 {
     color: #0166FF;
     display: block;
     padding: 0 7%;
     margin: 50px 0 70px 0px;
   }
-  #about-process .process h3:before {
+  #about-process .process h2:before {
     float: left;
     padding-bottom: 100px;
   }
 }
 @media only screen and (max-width: 750px) {
-  #about-process .process h3:before {
+  #about-process .process h2:before {
     padding-bottom: 60px;
   }
   #about-process .process .process-width {display: none;}
@@ -51,7 +51,7 @@
   }
 }
 @media only screen and (max-width: 504px) {
-  #about-process .process h3:before {
+  #about-process .process h2:before {
     display: none;
   }
 }

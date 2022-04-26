@@ -5,9 +5,6 @@ Global
 html {
   background-color: #0062F4;
   color: white;
-  /* background-image: url(../images/grid.png); */
-  background-position: center;
-  background-repeat: repeat-y;
 }
 
 body {

@@ -4,99 +4,93 @@ header {
   background-color: #0066FF;
 }
 .header-inner {
+  position: relative;
   max-width: 1600px;
   height: 160px;
   margin: 0 auto;
-  padding: 0 91px;
+  padding: 0 80px;
+  z-index: 2;
 }
-.logo, .home-logo-link {
-  display: block;
+.logo, .logo-icon {
+  display: inline-block;
   position: relative;
-  width: 400px;
   top: 50%;
   transform: translateY(-50%);
-  padding-top: 10px;
 }
-.home-logo-link img {
-  display: block;
-  width: 400px;
-  margin-left: -10px;
+.logo img {
+  display: inline-block;
+  height: 70px;
+}
+.logo-icon {
+  display: none;
+}
+.logo-icon img {
+  display: inline-block;
+  height: 70px;
 }
 nav {
-  float: right;
+  position: relative;
 }
 nav .selected, nav a:link, nav a:visited, nav a:hover, nav a:active {
   font-size: 3.5rem;
   color: #FFFFFF;
   text-decoration: none;
 }
-nav span:first-child, nav a:first-child {
-  margin-right: 64px;
-}
 nav .selected {
   border-bottom: 3px solid #FFFFFF;
 }
 nav .hamburger {
   display: none;
+  height: 70px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
 }
 nav .hamburger img {
-  margin-top: 2px;
+  height: 70px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
 }
-nav #myMobileLinks {
-  margin-top: -7px;
+nav #links {
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
-@media only screen and (max-width: 1000px) {
-  .header-inner {
-    padding: 0 71px;
+nav #links a {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+nav #links a:first-child {
+  margin-right: 60px;
+}
+@media only screen and (max-width: 992px) {
+  header {
+    height: 220px;
   }
-  .home-logo-link {
-    width: 100px;
-  }
-  .home-logo-link img {
+  .logo {
     display: none;
   }
-  .home-logo-link:before {
-    content: "\0020 ";
-    display: block;
-    width: 100px;
-    height: 94px;
-    margin-left: -10px;
-    background-size: cover;
-    background-image: url('/svg/logo.svg');
+  .logo-icon {
+    display: inline-block;
+  }
+  nav .hamburger {
+    display: inline-block;
+  }
+  nav #links {
+    display: none;
+    position: absolute;
+    margin-top: 60px;
   }
 }
-@media only screen and (max-width: 700px) {
-  header {
-    height: 226px;
-  }
+@media only screen and (max-width: 600px) {
   .header-inner {
     padding: 0 10%;
   }
-  nav .hamburger {
-    display: block;
-    width: 58px;
-    margin-top: -52px;
-    margin-right: 0px !important;
-  }
-  nav #myMobileLinks {
-    width: 100% !important;
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    margin-top: 20px;
+  nav #links {
     padding: 20px 10% 20px 0;
-    display: none;
-    text-align: right;
-  }
-  nav span:first-child, nav a:first-child {
-    margin-right: 40px;
-  }
-}
-@media only screen and (min-width: 701px) {
-  nav .hamburger {
-    display: none;
-  }
-  nav #myMobileLinks {
-    display: block;
   }
 }

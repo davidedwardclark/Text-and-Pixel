@@ -5,15 +5,15 @@
 }
 #about-team .team {
   width: 100%;
-  max-width: 1450px;
+  max-width: 1600px;
   margin: 0 auto;
 }
-#about-team .team h1 {
+#about-team .team h2 {
   margin: 0 0 150px 80px;
   font-size: 4.6rem;
   color: #fff;
 }
-#about-team .team h1:before {
+#about-team .team h2:before {
   font-family: arial;
   content: "\25A0 ";
   font-size: 9rem;

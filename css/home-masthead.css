@@ -45,8 +45,10 @@
   color: #fff;
 }
 #home-masthead .reviews-content {
+  position: relative;
   padding: 260px 80px 55px 80px;
   max-width: 1600px;
+  z-index: 2;
 }
 #home-masthead .reviews-content img {
   width: 117px;
