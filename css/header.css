@@ -67,6 +67,11 @@ nav #links a {
 nav #links a:first-child {
   margin-right: 60px;
 }
+@media only screen and (min-width: 993px) {
+  nav #links {
+    display: block !important;
+  }
+}
 @media only screen and (max-width: 992px) {
   header {
     height: 220px;
