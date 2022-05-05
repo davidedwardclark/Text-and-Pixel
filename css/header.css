@@ -88,14 +88,17 @@ nav #links a:first-child {
   nav #links {
     display: none;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 @media only screen and (max-width: 600px) {
+  nav #links a:first-child {
+    margin-right: 40px;
+  }
   .header-inner {
     padding: 0 10%;
   }
   nav #links {
-    padding: 20px 10% 20px 0;
+    padding: 0 0 20px 0;
   }
 }
