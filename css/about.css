@@ -1,0 +1,171 @@
+/* ----------------------------
+Global
+---------------------------- */
+
+h2 {
+  position: relative;
+  margin-bottom: 120px;
+  padding-left: 80px;
+  text-align: left;
+  font-size: 4.6rem;
+  line-height: 1em;
+}
+h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #00CB00;
+}
+h3 {
+  font-size: 4.2rem;
+  margin-bottom: 32px;
+  line-height: 1em;
+}
+p {
+  font-size: 2.3rem;
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    padding-left: 0;
+  }
+  h2:before {
+    display: none;
+  }
+}
+
+/* END Global */
+
+/* ----------------------------
+Our Values
+---------------------------- */
+
+#about-values {
+  background: #0166FF;
+  color: #fff;
+}
+#about-values .values {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 160px 80px 20px 80px;
+}
+#about-values .values img {
+  position: absolute;
+  width: 80px;
+  left: 160px;
+}
+#about-values .values h3, #about-values .values p {
+  padding-left: 240px;
+}
+#about-values .values p {
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 992px) {
+  #about-values .values img {
+    position: relative;
+    width: 80px;
+    left: 0;
+  }
+  #about-values .values h3, #about-values .values p {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #about-values .values {
+    padding: 80px 10%;
+  }
+}
+
+/* END Our Values */
+
+/* ----------------------------
+Our Process
+---------------------------- */
+
+#about-process .process {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px;
+}
+#about-process .process h2 {
+  color: #0166FF;
+  margin-bottom: 80px;
+}
+#about-process .process img {
+  width: 100%;
+}
+#about-process .process .process-width {
+  display: block;
+}
+#about-process .process .process-long {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  #about-process .process .process-width {display: none;}
+  #about-process .process .process-long {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #about-process .process {
+    padding: 80px 10%;
+  }
+}
+
+/* END Our Process */
+
+/* ----------------------------
+Our Team
+---------------------------- */
+
+#about-team {
+  background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 480px,#FFFFFF 480px,#FFFFFF 100%);
+  color: #0166FF;
+}
+#about-team .team {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px;
+}
+#about-team .team h2 {
+  color: #fff;
+}
+#about-team .team .profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+#about-team .team .profile {
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+}
+#about-team .team .profile img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width: 600px) {
+  #about-team {
+    background: linear-gradient(to bottom,  #0166FF 0%,#0166FF 380px,#FFFFFF 380px,#FFFFFF 100%);
+    text-align: left;
+  }
+  #about-team .team {
+    padding: 80px 10%;
+  }
+  #about-team .team .profile img {
+    max-width: 150px;
+  }
+}
+
+/* END Our Team */
