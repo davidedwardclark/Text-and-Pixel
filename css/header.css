@@ -13,20 +13,15 @@ header {
 }
 .logo, .logo-icon {
   display: inline-block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  position: absolute;
+  top: 35px;
 }
-.logo img {
+.logo img, .logo-icon img {
   display: inline-block;
   height: 70px;
 }
 .logo-icon {
   display: none;
-}
-.logo-icon img {
-  display: inline-block;
-  height: 70px;
 }
 nav {
   position: relative;
@@ -42,22 +37,20 @@ nav .selected {
 nav .hamburger {
   display: none;
   height: 70px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  position: absolute;
   float: right;
+  top: 35px;
+  right: 0;
 }
 nav .hamburger img {
   height: 70px;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  float: right;
 }
 nav #links {
   display: block;
   position: absolute;
   right: 0;
+  margin-top: 80px;
   z-index: 1;
 }
 nav #links a {
@@ -88,7 +81,7 @@ nav #links a:first-child {
   nav #links {
     display: none;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 120px;
   }
 }
 @media only screen and (max-width: 600px) {
