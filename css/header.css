@@ -14,7 +14,7 @@ header {
 .logo, .logo-icon {
   display: inline-block;
   position: absolute;
-  top: 35px;
+  top: 45px;
 }
 .logo img, .logo-icon img {
   display: inline-block;
@@ -39,7 +39,7 @@ nav .hamburger {
   height: 70px;
   position: absolute;
   float: right;
-  top: 35px;
+  top: 45px;
   right: 0;
 }
 nav .hamburger img {
@@ -81,7 +81,7 @@ nav #links a:first-child {
   nav #links {
     display: none;
     position: absolute;
-    margin-top: 120px;
+    margin-top: 140px;
   }
 }
 @media only screen and (max-width: 600px) {
