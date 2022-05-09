@@ -38,7 +38,8 @@
         <form
           action="https://formspree.io/f/xjvlenkk"
           method="POST">
-          <input name="subject" value="Contact form" class="invisible">
+          <input type="hidden" name="subject" value="Contact form">
+          <input type="hidden" id="pageurl"  name="pageurl" value="pageurl"> 
           <div id="columns">
             <div class="field">
               <label for="fname">Name</label>
@@ -50,11 +51,14 @@
             </div>
             <div class="field">
               <label class="message" for="tellusarea">Message</label>
-              <textarea name="tellusarea" id="tellusarea" form="usrform" required></textarea>
+              <textarea type="text" id="tellusarea" name="tellusarea" required></textarea>
             </div>
           </div>
           <button type="submit" value="Submit">Send</button>
         </form>
+        <script type="text/javascript">
+          document.getElementById('pageurl').value = window.location.href; 
+        </script>
       </div>
     </section>
     <section id="contact-address">

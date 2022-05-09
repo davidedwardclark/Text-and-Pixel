@@ -150,12 +150,15 @@
           <div class="grid-item form-email">
             <form
               action="https://formspree.io/f/xyyodrew"
-              method="POST"
-            >
-              <input name="subject" value="HAMIS - contact form" class="invisible">
+              method="POST">
+              <input type="hidden" name="subject" value="HAMIS - contact form">
+              <input type="hidden" id="pageurl"  name="pageurl" value="pageurl"> 
               <input type="text" id="email" name="email" required>
               <button type="submit" value="Submit" class="blue-button">Send</button>
             </form>
+            <script type="text/javascript">
+              document.getElementById('pageurl').value = window.location.href; 
+            </script>
           </div>
         </div>
       </div>
