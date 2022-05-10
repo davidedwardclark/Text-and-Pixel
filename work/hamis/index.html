@@ -151,13 +151,13 @@
             <form
               action="https://formspree.io/f/xyyodrew"
               method="POST">
-              <input type="hidden" name="subject" value="HAMIS - contact form">
-              <input type="hidden" id="pageurl"  name="pageurl" value="pageurl"> 
-              <input type="text" id="email" name="email" required>
-              <button type="submit" value="Submit" class="blue-button">Send</button>
+              <input type="hidden" id="Subject" name="Subject" value="HAMIS - contact form">
+              <input type="hidden" id="Page URL" name="Page URL" value="Page URL"> 
+              <input type="text" id="Email" name="Email" required>
+              <button type="submit" id="Submit" value="Submit" class="blue-button">Send</button>
             </form>
             <script type="text/javascript">
-              document.getElementById('pageurl').value = window.location.href; 
+              document.getElementById('Page URL').value = window.location.search; 
             </script>
           </div>
         </div>

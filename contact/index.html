@@ -38,26 +38,26 @@
         <form
           action="https://formspree.io/f/xjvlenkk"
           method="POST">
-          <input type="hidden" name="subject" value="Contact form">
-          <input type="hidden" id="pageurl"  name="pageurl" value="pageurl"> 
+          <input type="hidden" id="Subject" name="Subject" value="Contact form">
+          <input type="hidden" id="Page URL" name="Page URL" value="Page URL"> 
           <div id="columns">
-            <div class="field">
-              <label for="fname">Name</label>
-              <input type="text" onfocus="this.value=''" id="fname" name="fname" required>
+            <div class="field name">
+              <label for="First Name">Name</label>
+              <input type="text" onfocus="this.value=''" id="First Name" name="First Name" required>
             </div>
-            <div class="field">
-              <label for="eaddress">Email</label>
-              <input type="text" id="eaddress" name="eaddress" required>
+            <div class="field email">
+              <label for="Email Address">Email</label>
+              <input type="text" id="Email Address" name="Email Address" required>
             </div>
-            <div class="field">
-              <label class="message" for="tellusarea">Message</label>
-              <textarea type="text" id="tellusarea" name="tellusarea" required></textarea>
+            <div class="field message">
+              <label for="Message">Message</label>
+              <textarea type="text" id="Message" name="Message" required></textarea>
             </div>
           </div>
-          <button type="submit" value="Submit">Send</button>
+          <button type="submit" id="Submit" value="Submit">Send</button>
         </form>
         <script type="text/javascript">
-          document.getElementById('pageurl').value = window.location.href; 
+          document.getElementById('Page URL').value = window.location.pathname + window.location.search; 
         </script>
       </div>
     </section>
