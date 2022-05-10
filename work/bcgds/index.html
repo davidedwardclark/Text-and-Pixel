@@ -143,12 +143,15 @@
           <div class="grid-item form-email">
             <form
               action="https://formspree.io/f/xyyodrew"
-              method="POST"
-            >
-              <input name="subject" value="BC Government Design System - contact form" class="invisible">
-              <input type="text" id="email" name="email" required>
-              <button type="submit" value="Submit" class="blue-button">Send</button>
+              method="POST">
+              <input type="hidden" id="Subject" name="Subject" value="BC Government Design System - contact form">
+              <input type="hidden" id="Page URL" name="Page URL" value="Page URL"> 
+              <input type="text" id="Email" name="Email" required>
+              <button type="submit" id="Submit" value="Submit" class="blue-button">Send</button>
             </form>
+            <script type="text/javascript">
+              document.getElementById('Page URL').value = window.location.search; 
+            </script>
           </div>
         </div>
       </div>

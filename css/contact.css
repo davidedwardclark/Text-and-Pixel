@@ -21,7 +21,7 @@ Contact form
 #contact-form .form label {
   font-size: 2rem;
 }
-#contact-form .form .message {
+#contact-form .form .message label {
   width: 100%;
   font-size: 2rem;
   color: #fff;
@@ -39,7 +39,7 @@ Contact form
   padding-top: 10px;
   padding-bottom: 27px;
 }
-#contact-form .form input[name="eaddress"] {
+#contact-form .form .email input {
   border-bottom: 10px solid #00CB00;
 }
 #contact-form .form textarea {
@@ -88,7 +88,7 @@ Contact form
   #contact-form .form input, #contact-form .form textarea {
     border-bottom: 5px solid #FF20A4;
   }
-  #contact-form .form input[name="eaddress"] {
+  #contact-form .form input[name="Email Address"] {
     border-bottom: 5px solid #00CB00;
   }
   #contact-form .form textarea {
