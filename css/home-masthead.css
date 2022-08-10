@@ -36,6 +36,9 @@
   line-height: 4.3rem;
   z-index: 2;
 }
+#home-masthead .headline h1.message-received {
+  padding-bottom: 270px;
+}
 #home-masthead .case-studies {
   width: 100%;
   max-width: 1196px;
