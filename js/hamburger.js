@@ -11,14 +11,4 @@
     }
   }
 
-  function myFunctionScreen(screenMinWidth) {
-    let mobileLinks = document.getElementById('links');
-    if (screenMinWidth.matches && mobileLinks.style.display === 'none') {
-      mobileLinks.style.display = 'block';
-    }
-  }
-
-  myFunctionScreen(screenMinWidth);
-  screenMinWidth.addListener(myFunctionScreen);
-
 })();
